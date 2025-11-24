@@ -1,0 +1,302 @@
+html,body {
+    direction: rtl;
+}
+
+:root {
+    --color-primary-50: #6593e9;
+    --color-primary-100: #4f83e6;
+    --color-primary-200: #3873e3;
+    --color-primary-300: #2263df;
+    --color-primary-500: #1D59CB;
+    --color-primary-600: #1a51b9;
+    --color-primary-700: #1849a7;
+    --color-primary-800: #154295;
+    --color-primary-900: #133a84;
+    --color-primary-950: #103272;
+
+    --color-secondary-50: #74d0c1;
+    --color-secondary-100: #61cab9;
+    --color-secondary-200: #4ec3b0;
+    --color-secondary-300: #3eb9a5;
+    --color-secondary-500: #38A694;
+    --color-secondary-600: #339786;
+    --color-secondary-700: #2e8779;
+    --color-secondary-800: #29786b;
+    --color-secondary-900: #23695e;
+    --color-secondary-950: #1e5a50;
+}
+
+
+
+
+
+
+/* ===========================
+   Desktop Typography
+=========================== */
+
+/* Display */
+.display-1 {
+    font-size: 64px;
+    line-height: 76px;
+    font-weight: bold;
+}
+
+.display-2 {
+    font-size: 56px;
+    line-height: 68px;
+    font-weight: bold;
+}
+
+.display-3 {
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: bold;
+}
+
+/* Headings */
+.h-1 {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: bold;
+}
+
+.h-2 {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: bold;
+}
+
+.h-3 {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.h-4 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+}
+
+.h-5 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.h-6 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+}
+
+/* Body */
+.body-1 {
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+.body-2 {
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 400;
+}
+
+.body-3 {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.body-4 {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+/* Buttons */
+.btn-1 {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+}
+
+.btn-2 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.btn-3 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+/* Caption */
+.caption-1 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+
+}
+
+.caption-2 {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+
+/* ===========================
+   Mobile Typography
+=========================== */
+
+@media (max-width: 768px) {
+
+    .h-1 {
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: 600;
+    }
+
+    .h-2 {
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 600;
+    }
+
+    .h-3 {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 600;
+    }
+
+    .h-4 {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 600;
+    }
+
+    .h-5 {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+    }
+
+    .h-6 {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 600;
+    }
+
+    .body-1 {
+        font-size: 20px;
+        line-height: 34px;
+    }
+
+    .body-2 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .body-3 {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .body-4 {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .caption-1 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .caption-2 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+
+
+
+.offcanvas {
+    background-color: var(--color-primary-50);
+}
+
+.menu-link {
+    color: var(--color-primary-500);
+    transition: all 0.3s ease;
+}
+
+.menu-link:hover {
+    color: #fff;
+    background-color: var(--color-primary-500);
+    border-radius: 0.5rem;
+}
+
+.accordion-button {
+    color: var(--color-primary-700);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: var(--color-primary-100);
+    color: var(--color-primary-900);
+}
+
+.accordion-button::after {
+    display: none; /* حذف فلش */
+}
+
+.accordion-item + .accordion-item {
+    margin-top: 0.5rem;
+}
+
+.accordion-body a {
+    transition: all 0.3s ease;
+}
+
+
+.custom-header{
+    box-shadow: 0px 0px 20px 0px rgba(29, 89, 203, 0.05),0px 4px 10.1px 0px rgba(0, 0, 0, 0.05) ;
+    border-bottom: 1px solid rgba(101, 147, 233, 1);
+    border-radius: 48px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-bottom-width: 1px;
+
+}
+
+.custom-desktop-header{
+    height: 137px !important;
+}
+
+
+footer {
+
+    border-top-width: 4px;
+    border-top-left-radius: 57.33px;
+    border-top-right-radius: 57.33px;
+    border-top: 4px solid rgba(101, 147, 233, 1);
+    box-shadow: 0px -7px 20.8px 0px rgba(29, 89, 203, 0.09);
+
+}
+
+
+
+footer nav{
+    background: rgba(237, 242, 252, 1);
+    width: 1122px ;
+    height: 91px !important;
+
+    border-radius: 18.55px;
+
+}
