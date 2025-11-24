@@ -295,8 +295,17 @@ footer {
 footer nav{
     background: rgba(237, 242, 252, 1);
     width: 1122px ;
-    height: 91px !important;
-
+    height: fit-content !important;
     border-radius: 18.55px;
 
 }
+
+
+
+html, body {
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
