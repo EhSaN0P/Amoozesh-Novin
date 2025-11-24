@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> آرشیو کتاب ها</title>
+    <!--css links-->
+    <link rel="stylesheet" href="../public/css/setting.css">
+    <link rel="stylesheet" href="../public/css/school_archive.css">
+    <link rel="stylesheet" href="../public/css/carousel.css">
+    <link rel="stylesheet" href="../node-modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node-modules/swiper/swiper-bundle.min.css">
+
+
+</head>
+<body>
+
+<!--Header-->
+<header class="container-fluid py-3">
+    <!-- Desktop -->
+    <div class="d-none d-md-block">
+        <div class="bg-white custom-header custom-desktop-header mx-xl-5 my-xl-4 px-4 py-3 d-flex justify-content-between align-items-center">
+
+            <!-- Right: Logo + Nav -->
+            <div class="d-flex align-items-center gap-4">
+                <a class="d-flex align-items-center text-decoration-none">
+                    <img src="../public/images/logo/amoozesh-novin-logo.png" class="img-fluid" style="width:80px;">
+                </a>
+
+                <nav class="d-flex align-items-center gap-4">
+                    <a href="#" class="text-secondary nav-link">خانه</a>
+                    <a href="#" class="text-secondary nav-link">مدرسه‌ها</a>
+
+                    <!-- Dropdown 1 -->
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle text-secondary" data-bs-toggle="dropdown">رشته‌ها</a>
+                        <ul class="dropdown-menu text-end">
+                            <li><a class="dropdown-item" href="#">مهندسی</a></li>
+                            <li><a class="dropdown-item" href="#">پزشکی</a></li>
+                            <li><a class="dropdown-item" href="#">علوم انسانی</a></li>
+                            <li><a class="dropdown-item" href="#">هنر</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Dropdown 2 -->
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle text-secondary" data-bs-toggle="dropdown">اساتید</a>
+                        <ul class="dropdown-menu text-end">
+                            <li><a class="dropdown-item" href="#">اساتید برتر</a></li>
+                            <li><a class="dropdown-item" href="#">همه اساتید</a></li>
+                            <li><a class="dropdown-item" href="#">اساتید جدید</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Dropdown 3 -->
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle text-secondary" data-bs-toggle="dropdown">کتاب‌ها</a>
+                        <ul class="dropdown-menu text-end">
+                            <li><a class="dropdown-item" href="#">کتاب‌های درسی</a></li>
+                            <li><a class="dropdown-item" href="#">کمک آموزشی</a></li>
+                            <li><a class="dropdown-item" href="#">دانشگاهی</a></li>
+                            <li><a class="dropdown-item" href="#">عمومی</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Left: Cart + Button -->
+            <div class="d-flex align-items-center gap-3">
+                <button class="btn border-primary rounded-circle p-2">
+                    <img src="../public/icons/bag-2.svg" width="22">
+                </button>
+                <button class="btn btn-primary px-4 py-2">ورود به حساب</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile -->
+    <div class="d-md-none ">
+        <div class="px-3 py-2 custom-header">
+            <div class="d-flex justify-content-between align-items-center">
+
+                <button class="btn border-primary rounded-circle p-2" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                    <img src="../public/icons/menu.svg" width="22">
+                </button>
+
+                <img src="../public/images/logo/amoozesh-novin-logo.png" width="60">
+
+                <button class="btn border-primary rounded-circle p-2">
+                    <img src="../public/icons/bag-2.svg" width="22">
+                </button>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Offcanvas Modern -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas-header border-bottom">
+        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body p-0">
+        <div class="container px-3">
+
+            <!-- لینک‌های اصلی -->
+            <a class="dropdown-item py-3 border-bottom rounded-3 mb-1 d-block text-end body-3 menu-link" href="#">خانه</a>
+            <a class="dropdown-item py-3 border-bottom rounded-3 mb-1 d-block text-end body-3 menu-link" href="#">مدرسه‌ها</a>
+
+            <!-- Accordion بخش‌ها -->
+            <div class="accordion accordion-flush" id="mobileAccordion">
+
+                <!-- رشته‌ها -->
+                <div class="accordion-item border-0 mb-2">
+                    <h2 class="accordion-header" id="headingRoshteha">
+                        <button class="accordion-button collapsed text-end body-3 p-3 rounded-3 bg-white shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRoshteha" aria-expanded="false" aria-controls="collapseRoshteha">
+                            رشته‌ها
+                        </button>
+                    </h2>
+                    <div id="collapseRoshteha" class="accordion-collapse collapse" aria-labelledby="headingRoshteha" data-bs-parent="#mobileAccordion">
+                        <div class="accordion-body p-0 d-flex flex-column">
+                            <a class="dropdown-item py-2 px-3 border-bottom body-4 menu-link" href="#">مهندسی</a>
+                            <a class="dropdown-item py-2 px-3 border-bottom body-4 menu-link" href="#">پزشکی</a>
+                            <a class="dropdown-item py-2 px-3 border-bottom body-4 menu-link" href="#">علوم انسانی</a>
+                            <a class="dropdown-item py-2 px-3 body-4 menu-link" href="#">هنر</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- اساتید -->
+                <div class="accordion-item border-0 mb-2">
+                    <h2 class="accordion-header" id="headingAsatid">
+                        <button class="accordion-button collapsed text-end body-3 p-3 rounded-3 bg-white shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAsatid" aria-expanded="false" aria-controls="collapseAsatid">
+                            اساتید
+                        </button>
+                    </h2>
+                    <div id="collapseAsatid" class="accordion-collapse collapse" aria-labelledby="headingAsatid" data-bs-parent="#mobileAccordion">
+                        <div class="accordion-body p-0 d-flex flex-column">
+                            <a class="dropdown-item py-2 px-3 border-bottom body-4 menu-link" href="#">اساتید برتر</a>
+                            <a class="dropdown-item py-2 px-3 border-bottom body-4 menu-link" href="#">همه اساتید</a>
+                            <a class="dropdown-item py-2 px-3 body-4 menu-link" href="#">اساتید جدید</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- کتاب‌ها -->
+                <div class="accordion-item border-0 mb-2">
+                    <h2 class="accordion-header" id="headingKetabha">
+                        <button class="accordion-button collapsed text-end body-3 p-3 rounded-3 bg-white shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKetabha" aria-expanded="false" aria-controls="collapseKetabha">
+                            کتاب‌ها
+                        </button>
+                    </h2>
+                    <div id="collapseKetabha" class="accordion-collapse collapse" aria-labelledby="headingKetabha" data-bs-parent="#mobileAccordion">
+                        <div class="accordion-body p-0 d-flex flex-column">
+                            <a class="dropdown-item py-2 px-3 border-bottom body-4 menu-link" href="#">درسی</a>
+                            <a class="dropdown-item py-2 px-3 border-bottom body-4 menu-link" href="#">کمک‌آموزشی</a>
+                            <a class="dropdown-item py-2 px-3 border-bottom body-4 menu-link" href="#">دانشگاهی</a>
+                            <a class="dropdown-item py-2 px-3 body-4 menu-link" href="#">عمومی</a>
+                        </div>
+                    </div>
+                </div>
+
+                    <button type="submit" class=" col-12  btn btn-primary">
+                        ورود به حساب
+                    </button>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Start Content-->
+
+
+<div class="container-fluid col-xl-9 col-md-10 col-12">
+  <div class="row">
+    <!-- فیلتر سمت چپ -->
+    <div class=" col-lg-3 col-sm-12 col-xm">
+      <form action="" class="filter-box p-3">
+        <h5 class="mb-3 fw-bold">فیلترها</h5>
+
+        <div class="accordion" id="filterAccordion">
+          <!--  -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingCategory">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseCategory" aria-expanded="false" aria-controls="collapseCategory">
+                پایه تحصیلی
+              </button>
+            </h2>
+            <div id="collapseCategory" class="accordion-collapse collapse" aria-labelledby="headingCategory"
+              data-bs-parent="#filterAccordion">
+              <div class="accordion-body scroll-box">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="cat1">
+                  <label class="form-check-label" for="cat1">گزینه ۱</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="cat2">
+                  <label class="form-check-label" for="cat2">گزینه ۲</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="cat3">
+                  <label class="form-check-label" for="cat3">گزینه ۳</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="cat4">
+                  <label class="form-check-label" for="cat4">گزینه ۴</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="cat5">
+                  <label class="form-check-label" for="cat5">گزینه ۵</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--  -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingStatus">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseStatus" aria-expanded="false" aria-controls="collapseStatus">
+                رشته‌ها
+              </button>
+            </h2>
+            <div id="collapseStatus" class="accordion-collapse collapse" aria-labelledby="headingStatus"
+              data-bs-parent="#filterAccordion">
+              <div class="accordion-body scroll-box">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="status1">
+                  <label class="form-check-label" for="status1">معماری</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="status2">
+                  <label class="form-check-label" for="status2">حسابداری</label>
+                </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="status2">
+                  <label class="form-check-label" for="status2">کامپیوتر</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <div class="accordion-item">
+            <h2 class="accordion-header" id="headingLesson">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseLesson" aria-expanded="false" aria-controls="collapseLesson">
+                درس ها
+              </button>
+            </h2>
+            <div id="collapseLesson" class="accordion-collapse collapse" aria-labelledby="headingLesson"
+              data-bs-parent="#filterAccordion">
+              <div class="accordion-body scroll-box">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="Lesson1">
+                  <label class="form-check-label" for="Lesson1">تخصصی</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="Lesson2">
+                  <label class="form-check-label" for="Lesson2">عمومی</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="Lesson2">
+                  <label class="form-check-label" for="Lesson2">پایه</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- دکمه اعمال -->
+        <button type="submit" class="btn btn-primary w-100 mt-3">اعمال فیلتر</button>
+      </form>
+    </div>
+
+    <!-- محتوای اصلی سمت راست -->
+    <div class="col-xl-9 col-lg-9 col-md-12 col-12">
+      <div class="content-box shadow-sm p-4">
+        <div class="row g-4">
+          <!-- کارت ۱ -->
+          <div class=" col-xl-4 col-lg-5 col-sm-6 col-xm-12">
+            <div class="mx-auto card introduce-card h-100">
+              <img src="../public/images/books/1.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title">هنرستان فنی حرفه ای فجر</h5>
+                <p class="card-text">لورم ایپسوم متن ساختگی...</p>
+                <a href="#" class="btn btn-outline-primary rounded-5 col-12">
+                  مشاهده بیشتر
+                  <img src="../public/icons/arrow-left-more.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+
+             <div class=" col-xl-4 col-lg-5 col-sm-6 col-xm-12">
+            <div class="mx-auto card introduce-card h-100">
+              <img src="../public/images/books/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title">هنرستان فنی حرفه ای فجر</h5>
+                <p class="card-text">لورم ایپسوم متن ساختگی...</p>
+                <a href="#" class="btn btn-outline-primary rounded-5 col-12">
+                  مشاهده بیشتر
+                  <img src="../public/icons/arrow-left-more.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+
+             <div class=" col-xl-4 col-lg-5 col-sm-6 col-xm-12">
+            <div class="mx-auto card introduce-card h-100">
+              <img src="../public/images/books/3.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title">هنرستان فنی حرفه ای فجر</h5>
+                <p class="card-text">لورم ایپسوم متن ساختگی...</p>
+                <a href="#" class="btn btn-outline-primary rounded-5 col-12">
+                  مشاهده بیشتر
+                  <img src="../public/icons/arrow-left-more.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+
+             <div class=" col-xl-4 col-lg-5 col-sm-6 col-xm-12">
+            <div class="mx-auto card introduce-card h-100">
+              <img src="../public/images/books/1.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title">هنرستان فنی حرفه ای فجر</h5>
+                <p class="card-text">لورم ایپسوم متن ساختگی...</p>
+                <a href="#" class="btn btn-outline-primary rounded-5 col-12">
+                  مشاهده بیشتر
+                  <img src="../public/icons/arrow-left-more.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+
+             <div class=" col-xl-4 col-lg-5 col-sm-6 col-xm-12">
+            <div class="mx-auto card introduce-card h-100">
+              <img src="../public/images/books/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title">هنرستان فنی حرفه ای فجر</h5>
+                <p class="card-text">لورم ایپسوم متن ساختگی...</p>
+                <a href="#" class="btn btn-outline-primary rounded-5 col-12">
+                  مشاهده بیشتر
+                  <img src="../public/icons/arrow-left-more.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+
+             <div class=" col-xl-4 col-lg-5 col-sm-6 col-xm-12">
+            <div class="mx-auto card introduce-card h-100">
+              <img src="../public/images/books/3.jpg" class="card-img-top" alt="...">
+              <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                <h5 class="card-title">هنرستان فنی حرفه ای فجر</h5>
+                <p class="card-text">لورم ایپسوم متن ساختگی...</p>
+                <a href="#" class="btn btn-outline-primary rounded-5 col-12">
+                  مشاهده بیشتر
+                  <img src="../public/icons/arrow-left-more.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          
+               
+          <div class="container-fluid d-flex justify-content-center align-items-center  mt-5">
+            <nav aria-label="Page navigation example ">
+                <ul class="pagination">
+                    
+                    <li class="page-item " >
+                        <a class="page-link p-1 " href="#">
+                            <img src="../public//icons/icon-Thin-Front.svg" alt="" srcset="">
+                        </a>
+                    </li>
+                    <!-- no prev -->
+                    <!-- <li class="page-item pe-none opacity-50" >
+                        <a class="page-link p-1 " href="#">
+                            <img src="../public//icons/icon-Thin-Front.svg" alt="" srcset="">
+                        </a>
+                    </li> -->
+
+                    <li class="page-item">
+                        <a class="page-link pg-active p-2 " href="#">
+                            1
+                        </a>
+                    </li>
+
+
+                     <li class="page-item">
+                        <a class="page-link p-2 " href="#">
+                            2
+                        </a>
+                    </li>
+
+                     <li class="page-item">
+                        <a class="page-link p-2 " href="#">
+                            3
+                        </a>
+                    </li>
+
+                    <!-- no next -->
+                    <!-- <li class="page-item pe-none opacity-50" >
+                        <a class="page-link p-1 " href="#">
+                            <img src="../public//icons/icon-Thin-Back.svg" alt="" srcset="">
+                        </a>
+                    </li> -->
+                    
+                    <li class="page-item">
+                        <a class="page-link p-1 " href="#">
+                            <img src="../public//icons/icon-Thin-Back.svg" alt="" srcset="">
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--End Content-->
+
+
+<!--Footer-->
+<footer class=" my-4 py-3 px-3">
+    <!-- Top Row: Logo & Brand + Description -->
+    <div class="container d-flex flex-column flex-md-row align-items-center align-items-md-stretch justify-content-evenly gap-3 py-2">
+        <!-- Brand Title & Circle -->
+        <div class="d-flex flex-row-reverse align-items-center gap-2 justify-content-center" style="width:122px; min-width:122px; max-width:122px;">
+            <span class="fw-semibold text-gray-700 text-nowrap">آموزش نوین</span>
+            <span class="d-inline-flex align-items-center justify-content-center rounded-circle" style="background:#1D59CB; width:32px; height:32px;"></span>
+        </div>
+        <!-- Description -->
+        <div class="text-center text-md-end text-gray-500 flex-grow-1">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم ازت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی  کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، ت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد
+        </div>
+    </div>
+
+    <!-- Footer Navigation Links -->
+    <nav class="container my-3 py-2 px-3  rounded-3 d-flex flex-wrap justify-content-evenly align-items-center gap-2">
+        <a href="#" class="d-flex flex-column align-items-center text-primary text-decoration-none px-2 py-1">
+            <span class="fs-6">خانه</span>
+            <span class="d-block w-100 bg-primary rounded" style="height:2px;"></span>
+        </a>
+        <a href="#" class="d-flex flex-column align-items-center text-primary text-decoration-none px-2 py-1">
+            <span class="fs-6">مدرسه ها</span>
+            <span class="d-block w-100 bg-primary rounded" style="height:2px; opacity:0;"></span>
+        </a>
+        <a href="#" class="d-flex flex-column align-items-center text-primary text-decoration-none px-2 py-1">
+            <span class="fs-6">رشته ها</span>
+            <span class="d-block w-100 bg-primary rounded" style="height:2px; opacity:0;"></span>
+        </a>
+        <a href="#" class="d-flex flex-column align-items-center text-primary text-decoration-none px-2 py-1">
+            <span class="fs-6">اساتید</span>
+            <span class="d-block w-100 bg-primary rounded" style="height:2px; opacity:0;"></span>
+        </a>
+        <a href="#" class="d-flex flex-column align-items-center text-primary text-decoration-none px-2 py-1">
+            <span class="fs-6">کتاب ها</span>
+            <span class="d-block w-100 bg-primary rounded" style="height:2px; opacity:0;"></span>
+        </a>
+    </nav>
+
+    <!-- Footer Icons Section -->
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-evenly gap-3 py-2">
+        <!-- Contact -->
+        <div class="d-flex flex-column align-items-center align-items-md-start gap-2" style="max-width:180px;">
+            <span class="fw-semibold text-gray-700">ارتباط با <span class="text-primary">ما</span></span>
+            <div class="d-flex align-items-center gap-3">
+                <div class="border border-primary rounded p-2 d-flex align-items-center justify-content-center" style="width:44px; height:44px;">
+                    <img src="../public/icons/call-calling.svg" alt="call" class="img-fluid">
+                </div>
+                <span class="text-gray-700">0912-21326545</span>
+            </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="d-flex flex-column align-items-center gap-2" style="max-width:220px;">
+            <span class="fw-semibold text-gray-700">لینک شبکه های اجتماعی <span class="text-primary">آموزش نوین</span></span>
+            <div class="d-flex align-items-center gap-3">
+                <img src="../public/icons/combo shape.svg" alt="" class="img-fluid" style="width:30px; height:40px;">
+                <img src="../public/icons/telegramsvg.svg" alt="" class="img-fluid" style="width:30px; height:40px;">
+                <img src="../public/icons/linkedin.svg" alt="" class="img-fluid" style="width:30px; height:40px;">
+                <img src="../public/icons/instagram.svg" alt="" class="img-fluid" style="width:30px; height:40px;">
+            </div>
+        </div>
+
+        <!-- Trust Icons -->
+        <div class="d-flex flex-column align-items-center align-items-md-start gap-2" style="max-width:180px;">
+            <span class="fw-semibold text-gray-700">نماد <span class="text-primary">اعتماد</span></span>
+            <div class="d-flex align-items-center gap-2">
+                <img src="../public/images/trust-icons/01.png" alt="" class="img-fluid" style="width:55px; height:64px; border:0.8px solid #ccc; border-radius:2px;">
+                <img src="../public/images/trust-icons/02.png" alt="" class="img-fluid" style="width:55px; height:64px; border:0.8px solid #ccc; border-radius:2px;">
+                <img src="../public/images/trust-icons/03 1.png" alt="" class="img-fluid" style="width:55px; height:64px; border:0.8px solid #ccc; border-radius:2px;">
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!--script links-->
+<script src="../node-modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../node-modules/swiper/swiper-bundle.min.js"></script>
+<script src="../node-modules/jquery/dist/jquery.min.js"></script>
+<script src="../public/js/setting.js"></script>
+<script src="../public/js/school_archive.js"></script>
+
+
+</body>
+</html>
