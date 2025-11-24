@@ -309,3 +309,40 @@ html, body {
     font-family: sans-serif;
 }
 
+
+
+/* paginations */
+
+.pagination{
+    
+    gap: 1rem;
+}
+.page-item{
+    
+}
+
+
+.page-link{
+    
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px !important;
+    background-color: rgba(249, 248, 254, 1) !important;
+    color: rgba(16, 78, 146, 1) !important;
+
+    
+    
+    
+
+}
+
+
+.pg-active{
+    border: 1px solid rgba(24, 73, 167, 1) !important;
+    background: rgba(237, 242, 252, 1) !important;
+
+}
