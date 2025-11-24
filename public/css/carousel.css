@@ -68,35 +68,36 @@
 
 .nav-controllers-parent{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: fit-content !important;
-    width: fit-content !important;
-    position: relative;
-    margin: 0.3rem;
-    padding: 0.6rem;
+    justify-content: end !important;
+    position: relative !important;
+    width:15% !important;
+    height: 7rem !important;
+    padding: 2%;
+
 
 }
 
 .swiper-button-next, .swiper-button-prev {
-    width: 35px !important;
-    height: 35px !important;
+    width: 56px !important;
+    height: 56px !important;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    border-radius: 20px;
+    border-radius: 28px;
     border: 0.71px solid rgba(29, 89, 203, 1);
-    position: relative !important;
-
-
-
+    position: relative!important;
+    
 }
 
-.swiper-button-next::after, .swiper-button-prev::after {
-    font-size: 20px;
-    font-weight: bold;
+
+
+.swiper-button-next img, .swiper-button-prev img {
+    width: 32px;
+    height: 32px;
 }
+
+
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
@@ -105,12 +106,51 @@
 
 
 
+.sliders_heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+}
+
+.sliders_heading > div:nth-child(1){
+    height: 7rem !important;
+    width: 15%;
+    display: flex;
+    justify-content: start ;
+    align-items: center ;
+    font-size: 1.5rem;
+    font-weight: bolder;
+
+}
+
+
+
+.slider-show-info{
+    width: 125px;
+    height: 48px;
+    border-radius: 24px !important;
+    border: 1px solid rgba(101, 147, 233, 1) !important;
+    border-radius: 24px ;
+    display: flex !important;
+    justify-content: space-evenly ; 
+    align-items: center !important;
+
+    padding-top: 16px;
+    padding-right: 8px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+
+
+}
 .slider-icon-con{
     width: 32px !important ;
     height: 32px !important ;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 22.4px;
     background: rgba(237, 242, 252, 1);
 
 
@@ -121,28 +161,9 @@
 }
 
 
-.slider-show-info{
-    width: 137px;
-    height: 48px;
-    border-radius: 24px !important;
-    border: 1px solid rgba(101, 147, 233, 1) !important;
-
-
-}
-
-
-
-.sliders_heading{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-}
-
 
 .sliders_heading hr{
-    width:70% !important ;
-
+    width:70%;
 }
 
 /* ==========================
@@ -294,6 +315,107 @@
     .slider-show-info{
         transform: scale(0.8);
     }
+
+
+
+
+
+
+.nav-controllers-parent{
+    display: flex;
+    justify-content: end !important;
+    position: relative !important;
+    width:30% !important;
+    height: 7rem !important;
+    padding: 2%;
+
+
+}
+
+.swiper-button-next, .swiper-button-prev {
+    width: 40px !important;
+    height: 40px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 28px;
+    border: 0.71px solid rgba(29, 89, 203, 1);
+    position: relative!important;
+    
+}
+
+
+.sliders_heading > div:nth-child(1){
+    height: 7rem !important;
+    width: 45%;
+    display: flex;
+    justify-content: start ;
+    align-items: center ;
+    font-size: 1;
+    font-weight: bolder;
+
+}
+
+
+
+.swiper-button-next img, .swiper-button-prev img {
+    width: 22px;
+    height: 22px;
+}
+
+
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: none !important; /* یا display: none */
+}
+
+
+
+.slider-icon-con{
+    width: 32px !important ;
+    height: 32px !important ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(237, 242, 252, 1);
+
+
+}
+.slider-icon-con img{
+    width: 50%;
+    height: 500%;
+}
+
+
+.slider-show-info{
+    width: 137px;
+    height: 48px;
+    border-radius: 24px !important;
+    border: 1px solid rgba(101, 147, 233, 1) !important;
+
+
+}
+
+
+
+.sliders_heading{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+
+}
+
+
+.sliders_heading hr{
+    width: 25%;
+}
+
+
+
+
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
@@ -307,8 +429,219 @@
         transform: scale(0.9);
     }
 
+
+
+
+
+
+.nav-controllers-parent{
+    display: flex;
+    justify-content: end !important;
+    position: relative !important;
+    width:30% !important;
+    height: 7rem !important;
+    padding: 2%;
+    
+
+
 }
 
+.swiper-button-next, .swiper-button-prev {
+    width: 40px !important;
+    height: 40px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 28px;
+    border: 0.71px solid rgba(29, 89, 203, 1);
+    position: relative!important;
+    
+}
+
+
+
+.swiper-button-next img, .swiper-button-prev img {
+    width: 22.85714340209961 ;
+    height: 22.85714340209961;
+}
+
+
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: none !important; /* یا display: none */
+}
+
+
+
+.slider-icon-con{
+    width: 32px !important ;
+    height: 32px !important ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(237, 242, 252, 1);
+
+
+}
+.slider-icon-con img{
+    width: 50%;
+    height: 500%;
+}
+
+
+.slider-show-info{
+    width: 137px;
+    height: 48px;
+    border-radius: 24px !important;
+    border: 1px solid rgba(101, 147, 233, 1) !important;
+
+
+}
+
+
+
+.sliders_heading > div:nth-child(1){
+
+    width: 35%;
+    display: flex;
+    justify-content: start ;
+    align-items: center ;
+    font-size: 1rem;
+    
+
+}
+
+
+
+.sliders_heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    
+
+}
+
+
+.sliders_heading hr{
+    width:36% ;
+    
+}
+
+
+
+
+
+}
+
+
+
+@media (max-width:1300px) and (min-width: 769px)   {
+    
+
+
+.nav-controllers-parent{
+    display: flex;
+    justify-content: end !important;
+    position: relative !important;
+    width:25% !important;
+    height: 7rem !important;
+    padding: 2%;
+
+
+}
+
+.swiper-button-next, .swiper-button-prev {
+    width: 46px !important;
+    height: 43px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 28px;
+    border: 0.71px solid rgba(29, 89, 203, 1);
+    position: relative!important;
+    
+}
+
+
+
+.swiper-button-next img, .swiper-button-prev img {
+    width: 27px;
+    height: 27px;
+}
+
+
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: none !important; /* یا display: none */
+}
+
+
+
+.sliders_heading{
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+
+}
+
+.sliders_heading > div:nth-child(1){
+    height: 7rem !important;
+    width: 25%;
+    display: flex;
+    justify-content: start ;
+    align-items: center ;
+    font-size: 1.3rem;
+    font-weight: bolder;
+
+}
+
+
+
+.slider-show-info{
+    width: 125px;
+    height: 48px;
+    border-radius: 24px !important;
+    border: 1px solid rgba(101, 147, 233, 1) !important;
+    border-radius: 24px ;
+    display: flex !important;
+    justify-content: space-evenly ; 
+    align-items: center !important;
+
+    padding-top: 16px;
+    padding-right: 8px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+
+
+}
+.slider-icon-con{
+    width: 32px !important ;
+    height: 32px !important ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22.4px;
+    background: rgba(237, 242, 252, 1);
+
+}
+
+.slider-icon-con img{
+    width: 50% !important;
+    height: 50% !important;
+}
+
+
+
+.sliders_heading hr{
+    width:60%;
+}
+}
 /* ==========================
    Carousel Item Flex Fix
 ========================== */
