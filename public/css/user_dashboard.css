@@ -1,0 +1,95 @@
+
+
+/* کانتینر اصلی */
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* کارت عمومی */
+.dashboard-card {
+  opacity: 1;
+  box-shadow: 0px 0px 50px 0px #2029370A;
+  background-color: #fff;
+}
+
+/* کارت بزرگ - حالت دسکتاپ */
+.card-large {
+  border-top-left-radius: 32px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 32px;
+}
+
+/* کارت کوچک - حالت دسکتاپ */
+.card-small {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+  border-bottom-left-radius: 16px;
+}
+
+/* 📱 حالت دسکتاپ: کارت‌ها کنار هم → ارتفاع برابر با کل صفحه */
+@media (min-width: 992px) {
+  .dashboard-card {
+    height: 95vh; /* کل ارتفاع صفحه */
+  }
+}
+
+/* 📱 حالت موبایل/تبلت: کارت‌ها زیر هم → ارتفاع با محتوا */
+@media (max-width: 991px) {
+  .dashboard-card {
+    height: auto; /* ارتفاع با محتوای داخلی */
+  }
+}
+
+
+.card-title{
+    text-wrap: nowrap;
+}
+
+
+
+
+.tab-option{
+    color: black;
+}
+
+.tab-option img{
+    filter: grayscale(100%);
+}
+
+.tab-option-active{
+    color: var(--color-primary-500);
+    position: relative;
+}
+
+.tab-option-active img{
+    filter: grayscale(0%);
+}
+
+.tab-option-active::before{
+    content: "";
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    background-color: var(--color-primary-500);
+    border-radius: 40px;
+    right: -0.5rem;
+    bottom:-0.1rem ;
+}
+
+
+.user-profile{
+    width: 120px;
+    height: 120px; 
+    object-fit: cover; 
+    margin: 0 auto;
+}
+
+
+.back-to-site-icon{
+    filter: grayscale(100%);
+    rotate: 180deg;
+}
