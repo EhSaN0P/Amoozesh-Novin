@@ -292,6 +292,24 @@
 
 
 
+.sliders_heading {
+  display: flex;
+  align-items: center;   
+  gap: 1rem;             
+}
+
+.sliders_heading div:first-child {
+  white-space: nowrap;   
+  margin-left: 1rem;
+}
+
+.sliders_heading hr {
+  flex-grow: 1;          
+  border: none;
+  border-top: 2px solid #ccc;
+  margin: 0rem;             
+  
+}
 
 /* ==========================
    Container
