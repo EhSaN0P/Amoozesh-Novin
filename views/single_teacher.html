@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>صفحه اصلی</title>
+    <!--css links-->
+    <link rel="stylesheet" href="../public/css/setting.css" />
+    <link rel="stylesheet" href="../public/css/carousel.css" />
+    <link rel="stylesheet" href="../public/css/single_teacher.css" />
+    <link
+      rel="stylesheet"
+      href="../node-modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node-modules/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!--Header-->
+    <header class="container-fluid py-3 col-xl-10 col-lg-10 col-md-11">
+      <!-- Desktop -->
+      <div class="d-none d-md-block mx-auto">
+        <div
+          class="custom-header custom-desktop-header mx-xl-5 my-xl-4 px-4 py-3 d-flex justify-content-between align-items-center"
+        >
+          <!-- Right: Logo + Nav -->
+          <div class="d-flex align-items-center gap-4">
+            <a class="d-flex align-items-center text-decoration-none">
+              <img
+                src="../public/images/logo/amoozesh-novin-logo.png"
+                class="img-fluid"
+                style="width: 80px"
+              />
+            </a>
+
+            <nav class="d-flex align-items-center gap-4">
+              <a href="#" class="text-secondary nav-link">خانه</a>
+              <a href="#" class="text-secondary nav-link">مدرسه‌ها</a>
+
+              <!-- Dropdown 1 -->
+              <div class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-secondary"
+                  data-bs-toggle="dropdown"
+                  >رشته‌ها</a
+                >
+                <ul class="dropdown-menu text-end">
+                  <li><a class="dropdown-item" href="#">مهندسی</a></li>
+                  <li><a class="dropdown-item" href="#">پزشکی</a></li>
+                  <li><a class="dropdown-item" href="#">علوم انسانی</a></li>
+                  <li><a class="dropdown-item" href="#">هنر</a></li>
+                </ul>
+              </div>
+
+              <!-- Dropdown 2 -->
+              <div class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-secondary"
+                  data-bs-toggle="dropdown"
+                  >اساتید</a
+                >
+                <ul class="dropdown-menu text-end">
+                  <li><a class="dropdown-item" href="#">اساتید برتر</a></li>
+                  <li><a class="dropdown-item" href="#">همه اساتید</a></li>
+                  <li><a class="dropdown-item" href="#">اساتید جدید</a></li>
+                </ul>
+              </div>
+
+              <!-- Dropdown 3 -->
+              <div class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-secondary"
+                  data-bs-toggle="dropdown"
+                  >کتاب‌ها</a
+                >
+                <ul class="dropdown-menu text-end">
+                  <li><a class="dropdown-item" href="#">کتاب‌های درسی</a></li>
+                  <li><a class="dropdown-item" href="#">کمک آموزشی</a></li>
+                  <li><a class="dropdown-item" href="#">دانشگاهی</a></li>
+                  <li><a class="dropdown-item" href="#">عمومی</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+          <!-- Left: Cart + Button -->
+          <div class="d-flex align-items-center gap-3">
+            <button class="btn border-primary rounded-circle p-2">
+              <img src="../public/icons/bag-2.svg" width="22" />
+            </button>
+            <button class="btn btn-primary px-4 py-2">ورود به حساب</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile -->
+      <div class="d-md-none">
+        <div class="px-3 py-2 custom-header">
+          <div class="d-flex justify-content-between align-items-center">
+            <button
+              class="btn border-primary rounded-circle p-2"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#mobileMenu"
+            >
+              <img src="../public/icons/menu.svg" width="22" />
+            </button>
+
+            <img
+              src="../public/images/logo/amoozesh-novin-logo.png"
+              width="60"
+            />
+
+            <button class="btn border-primary rounded-circle p-2">
+              <img src="../public/icons/bag-2.svg" width="22" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Offcanvas Modern -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+      <div class="offcanvas-header border-bottom">
+        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body p-0">
+        <div class="container px-3">
+          <!-- لینک‌های اصلی -->
+          <a
+            class="dropdown-item py-3 border-bottom rounded-3 mb-1 d-block text-end body-3 menu-link"
+            href="#"
+            >خانه</a
+          >
+          <a
+            class="dropdown-item py-3 border-bottom rounded-3 mb-1 d-block text-end body-3 menu-link"
+            href="#"
+            >مدرسه‌ها</a
+          >
+
+          <!-- Accordion بخش‌ها -->
+          <div class="accordion accordion-flush" id="mobileAccordion">
+            <!-- رشته‌ها -->
+            <div class="accordion-item border-0 mb-2">
+              <h2 class="accordion-header" id="headingRoshteha">
+                <button
+                  class="accordion-button collapsed text-end body-3 p-3 rounded-3 bg-white shadow-sm"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseRoshteha"
+                  aria-expanded="false"
+                  aria-controls="collapseRoshteha"
+                >
+                  رشته‌ها
+                </button>
+              </h2>
+              <div
+                id="collapseRoshteha"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingRoshteha"
+                data-bs-parent="#mobileAccordion"
+              >
+                <div class="accordion-body p-0 d-flex flex-column">
+                  <a
+                    class="dropdown-item py-2 px-3 border-bottom body-4 menu-link"
+                    href="#"
+                    >مهندسی</a
+                  >
+                  <a
+                    class="dropdown-item py-2 px-3 border-bottom body-4 menu-link"
+                    href="#"
+                    >پزشکی</a
+                  >
+                  <a
+                    class="dropdown-item py-2 px-3 border-bottom body-4 menu-link"
+                    href="#"
+                    >علوم انسانی</a
+                  >
+                  <a class="dropdown-item py-2 px-3 body-4 menu-link" href="#"
+                    >هنر</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- اساتید -->
+            <div class="accordion-item border-0 mb-2">
+              <h2 class="accordion-header" id="headingAsatid">
+                <button
+                  class="accordion-button collapsed text-end body-3 p-3 rounded-3 bg-white shadow-sm"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseAsatid"
+                  aria-expanded="false"
+                  aria-controls="collapseAsatid"
+                >
+                  اساتید
+                </button>
+              </h2>
+              <div
+                id="collapseAsatid"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingAsatid"
+                data-bs-parent="#mobileAccordion"
+              >
+                <div class="accordion-body p-0 d-flex flex-column">
+                  <a
+                    class="dropdown-item py-2 px-3 border-bottom body-4 menu-link"
+                    href="#"
+                    >اساتید برتر</a
+                  >
+                  <a
+                    class="dropdown-item py-2 px-3 border-bottom body-4 menu-link"
+                    href="#"
+                    >همه اساتید</a
+                  >
+                  <a class="dropdown-item py-2 px-3 body-4 menu-link" href="#"
+                    >اساتید جدید</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- کتاب‌ها -->
+            <div class="accordion-item border-0 mb-2">
+              <h2 class="accordion-header" id="headingKetabha">
+                <button
+                  class="accordion-button collapsed text-end body-3 p-3 rounded-3 bg-white shadow-sm"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseKetabha"
+                  aria-expanded="false"
+                  aria-controls="collapseKetabha"
+                >
+                  کتاب‌ها
+                </button>
+              </h2>
+              <div
+                id="collapseKetabha"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingKetabha"
+                data-bs-parent="#mobileAccordion"
+              >
+                <div class="accordion-body p-0 d-flex flex-column">
+                  <a
+                    class="dropdown-item py-2 px-3 border-bottom body-4 menu-link"
+                    href="#"
+                    >درسی</a
+                  >
+                  <a
+                    class="dropdown-item py-2 px-3 border-bottom body-4 menu-link"
+                    href="#"
+                    >کمک‌آموزشی</a
+                  >
+                  <a
+                    class="dropdown-item py-2 px-3 border-bottom body-4 menu-link"
+                    href="#"
+                    >دانشگاهی</a
+                  >
+                  <a class="dropdown-item py-2 px-3 body-4 menu-link" href="#"
+                    >عمومی</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="col-12 btn btn-primary">
+              ورود به حساب
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Start Content-->
+
+    <!-- breadcrumb -->
+    <div class="container col-10 px-3">
+      <nav aria-label="breadcrumb ">
+        <ol class="breadcrumb d-flex justify-content-end" dir="ltr">
+          <li class="breadcrumb-item active">عنوان فرضی</li>
+          <li class="breadcrumb-item active">عنوان فرضی</li>
+          <li class="breadcrumb-item"><a href="#">خانه</a></li>
+        </ol>
+      </nav>
+    </div>
+
+
+
+
+    <div class="container-fluid">
+      <div class=" col-xl-10 col-lg-10  mx-auto d-xl-flex d-lg-flex d-lg-flex  ">
+         
+        <div class="avatar-container col-xl-5 p-xl-3 d-flex justify-content-center">
+          
+          <div class="avatar p-4  ">
+
+              <img src="../public//images/teachers//t1.png" alt="">
+
+          </div>
+
+        </div>
+
+        <div class="info-container col-xl-6 col-md-10 col-sm-8 mx-auto p-xl-3 p-lg-4 px-md-3 py-md-5 px-sm-3 py-sm-5">
+
+                 <div class="slider-show-info btn m-3 mx-xl-0 mx-lg-0 mx-md-0 mx-sm-auto    ">
+                    <span class="slider-icon-con rounded-circle ">
+                        <img src="../public/icons/star.svg" alt="">
+                    </span>
+                    <span class="caption-2 ">
+                      معرفی استاد
+                    </span>
+                </div>
+                <span class="fs-3 ">جناب اقای سعید اردستانی</span>
+                
+                <p class="fs-6">
+                   لورم ایپسوم متن خالی  لورم ایپسوم متن خالی 
+                    لورم ایپسوم متن خالی  لورم ایپسوم متن خالی 
+                     لورم ایپسوم متن خالی  لورم ایپسوم متن خالی 
+                      لورم ایپسوم متن خالی  لورم ایپسوم متن خالی 
+                       لورم ایپسوم متن خالی  لورم ایپسوم متن خالی 
+                        لورم ایپسوم متن خالی  لورم ایپسوم متن خالی 
+                         لورم ایپسوم متن خالی  لورم ایپسوم متن خالی 
+                </p>
+
+                <span class="fs-2 text-center">پایه های تحت آموزش</span>
+                <div class="  d-flex justify-content-between gap-4 py-3 w-fit flex-wrap" >
+                   
+                  <div class="slider-show-info btn w-fit  mx-auto">                
+                    
+                    <span class="fs-5 ">
+                      دهم
+                    </span>
+                </div>
+
+                  <div class="slider-show-info btn w-fit mx-auto">                
+                    <span class="fs-5 ">
+                      یازدهم
+                    </span>
+                </div>
+
+                  <div class="slider-show-info btn w-fit mx-auto">                
+                    <span class="fs-5 ">
+                      دوازدهم
+                    </span>
+                </div>
+
+
+                </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+
+<!--Second Slider-->
+<div class="container position-relative col-lg-10 mx-auto  p-5">
+            
+                 <div class="slider-show-info btn  ">
+                    <span class="slider-icon-con rounded-circle ">
+                        <img src="../public/icons/star.svg" alt="">
+                    </span>
+                    <span class="caption-1 ">
+                        تخصصی های آموزشی
+                    </span>
+                </div>
+            
+                <div class="sliders_heading">
+        
+                    <div >
+
+                       دروس تدریسی استاد
+
+                    </div>
+
+                    <hr >
+
+
+                    <div class="nav-controllers-parent">
+                            <div class="swiper-button-prev sbp1">
+                                <img src="../public/icons/arrow-right.svg" alt="next" />
+                            </div>
+
+                            <div class="swiper-button-next sbn1">
+                                <img src="../public/icons/arrow-left.svg" alt="prev" />
+                            </div>
+                    </div>
+
+                </div>
+
+
+
+    <!-- Slider main container -->
+    <div class="swiper-container overflow-hidden">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="card introduce-card" >
+
+                    <img src="../public/images/books/3.jpg" class="card-img-top " alt="...">
+
+                    <div class="card-body  d-flex flex-column justify-content-center align-items-center">
+                        <h5 class="card-title">
+                           فیزیک
+                        </h5>
+                        <p class="card-text">
+                           توضیحات درمورد کتاب
+                        </p>
+                        <a href="#" class="btn btn-outline-primary rounded-5 col-12">
+                            مشاهده بیشتر
+                            <img src="../public/icons/arrow-left-more.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+           <div class="swiper-slide">
+                <div class="card introduce-card" >
+
+                    <img src="../public/images/books/1.jpg" class="card-img-top " alt="...">
+
+                    <div class="card-body  d-flex flex-column justify-content-center align-items-center">
+                        <h5 class="card-title">
+                           کتاب همراه هنرجو
+                        </h5>
+                        <p class="card-text">
+                           توضیحات درمورد کتاب
+                        </p>
+                        <a href="#" class="btn btn-outline-primary rounded-5 col-12">
+                            مشاهده بیشتر
+                            <img src="../public/icons/arrow-left-more.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card introduce-card" >
+
+                    <img src="../public/images/books/2.jpg" class="card-img-top " alt="...">
+
+                    <div class="card-body  d-flex flex-column justify-content-center align-items-center">
+                        <h5 class="card-title">
+                           نصب و راه اندازی سیستم های رایانه ای
+                        </h5>
+                        <p class="card-text">
+                           توضیحات درمورد کتاب
+                        </p>
+                        <a href="#" class="btn btn-outline-primary rounded-5 col-12">
+                            مشاهده بیشتر
+                            <img src="../public/icons/arrow-left-more.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+               <div class="swiper-slide">
+                <div class="card introduce-card" >
+
+                    <img src="../public/images/books/3.jpg" class="card-img-top " alt="...">
+
+                    <div class="card-body  d-flex flex-column justify-content-center align-items-center">
+                        <h5 class="card-title">
+                           فیزیک
+                        </h5>
+                        <p class="card-text">
+                           توضیحات درمورد کتاب
+                        </p>
+                        <a href="#" class="btn btn-outline-primary rounded-5 col-12">
+                            مشاهده بیشتر
+                            <img src="../public/icons/arrow-left-more.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+           <div class="swiper-slide">
+                <div class="card introduce-card" >
+
+                    <img src="../public/images/books/1.jpg" class="card-img-top " alt="...">
+
+                    <div class="card-body  d-flex flex-column justify-content-center align-items-center">
+                        <h5 class="card-title">
+                           کتاب همراه هنرجو
+                        </h5>
+                        <p class="card-text">
+                           توضیحات درمورد کتاب
+                        </p>
+                        <a href="#" class="btn btn-outline-primary rounded-5 col-12">
+                            مشاهده بیشتر
+                            <img src="../public/icons/arrow-left-more.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card introduce-card" >
+
+                    <img src="../public/images/books/2.jpg" class="card-img-top " alt="...">
+
+                    <div class="card-body  d-flex flex-column justify-content-center align-items-center">
+                        <h5 class="card-title">
+                           نصب و راه اندازی سیستم های رایانه ای
+                        </h5>
+                        <p class="card-text">
+                           توضیحات درمورد کتاب
+                        </p>
+                        <a href="#" class="btn btn-outline-primary rounded-5 col-12">
+                            مشاهده بیشتر
+                            <img src="../public/icons/arrow-left-more.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+
+   
+
+
+    <!--End Content-->
+
+    <!--Footer-->
+    <footer class="my-4 py-3 px-3">
+      <!-- Top Row: Logo & Brand + Description -->
+      <div
+        class="container d-flex flex-column flex-md-row align-items-center align-items-md-stretch justify-content-evenly gap-3 py-2"
+      >
+        <!-- Brand Title & Circle -->
+        <div
+          class="d-flex flex-row-reverse align-items-center gap-2 justify-content-center"
+          style="width: 122px; min-width: 122px; max-width: 122px"
+        >
+          <span class="fw-semibold text-gray-700 text-nowrap">آموزش نوین</span>
+          <span
+            class="d-inline-flex align-items-center justify-content-center rounded-circle"
+            style="background: #1d59cb; width: 32px; height: 32px"
+          ></span>
+        </div>
+        <!-- Description -->
+        <div class="text-center text-md-end text-gray-500 flex-grow-1">
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم ازت چاپ، و با استفاده از
+          طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
+          سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی کاربردهای متنوع با
+          هدف بهبود ابزارهای کاربردی می باشد، ت و سه درصد گذشته حال و آینده،
+          شناخت فراوان جامعه و متخصصان را می طلبد
+        </div>
+      </div>
+
+      <!-- Footer Navigation Links -->
+      <nav
+        class="container my-3 py-2 px-3 rounded-3 d-flex flex-wrap justify-content-evenly align-items-center gap-2"
+      >
+        <a
+          href="#"
+          class="d-flex flex-column align-items-center text-primary text-decoration-none px-2 py-1"
+        >
+          <span class="fs-6">خانه</span>
+          <span
+            class="d-block w-100 bg-primary rounded"
+            style="height: 2px"
+          ></span>
+        </a>
+        <a
+          href="#"
+          class="d-flex flex-column align-items-center text-primary text-decoration-none px-2 py-1"
+        >
+          <span class="fs-6">مدرسه ها</span>
+          <span
+            class="d-block w-100 bg-primary rounded"
+            style="height: 2px; opacity: 0"
+          ></span>
+        </a>
+        <a
+          href="#"
+          class="d-flex flex-column align-items-center text-primary text-decoration-none px-2 py-1"
+        >
+          <span class="fs-6">رشته ها</span>
+          <span
+            class="d-block w-100 bg-primary rounded"
+            style="height: 2px; opacity: 0"
+          ></span>
+        </a>
+        <a
+          href="#"
+          class="d-flex flex-column align-items-center text-primary text-decoration-none px-2 py-1"
+        >
+          <span class="fs-6">اساتید</span>
+          <span
+            class="d-block w-100 bg-primary rounded"
+            style="height: 2px; opacity: 0"
+          ></span>
+        </a>
+        <a
+          href="#"
+          class="d-flex flex-column align-items-center text-primary text-decoration-none px-2 py-1"
+        >
+          <span class="fs-6">کتاب ها</span>
+          <span
+            class="d-block w-100 bg-primary rounded"
+            style="height: 2px; opacity: 0"
+          ></span>
+        </a>
+      </nav>
+
+      <!-- Footer Icons Section -->
+      <div
+        class="container d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-evenly gap-3 py-2"
+      >
+        <!-- Contact -->
+        <div
+          class="d-flex flex-column align-items-center align-items-md-start gap-2"
+          style="max-width: 180px"
+        >
+          <span class="fw-semibold text-gray-700"
+            >ارتباط با <span class="text-primary">ما</span></span
+          >
+          <div class="d-flex align-items-center gap-3">
+            <div
+              class="border border-primary rounded p-2 d-flex align-items-center justify-content-center"
+              style="width: 44px; height: 44px"
+            >
+              <img
+                src="../public/icons/call-calling.svg"
+                alt="call"
+                class="img-fluid"
+              />
+            </div>
+            <span class="text-gray-700">0912-21326545</span>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div
+          class="d-flex flex-column align-items-center gap-2"
+          style="max-width: 220px"
+        >
+          <span class="fw-semibold text-gray-700"
+            >لینک شبکه های اجتماعی
+            <span class="text-primary">آموزش نوین</span></span
+          >
+          <div class="d-flex align-items-center gap-3">
+            <img
+              src="../public/icons/combo shape.svg"
+              alt=""
+              class="img-fluid"
+              style="width: 30px; height: 40px"
+            />
+            <img
+              src="../public/icons/telegramsvg.svg"
+              alt=""
+              class="img-fluid"
+              style="width: 30px; height: 40px"
+            />
+            <img
+              src="../public/icons/linkedin.svg"
+              alt=""
+              class="img-fluid"
+              style="width: 30px; height: 40px"
+            />
+            <img
+              src="../public/icons/instagram.svg"
+              alt=""
+              class="img-fluid"
+              style="width: 30px; height: 40px"
+            />
+          </div>
+        </div>
+
+        <!-- Trust Icons -->
+        <div
+          class="d-flex flex-column align-items-center align-items-md-start gap-2"
+          style="max-width: 180px"
+        >
+          <span class="fw-semibold text-gray-700"
+            >نماد <span class="text-primary">اعتماد</span></span
+          >
+          <div class="d-flex align-items-center gap-2">
+            <img
+              src="../public/images/trust-icons/01.png"
+              alt=""
+              class="img-fluid"
+              style="
+                width: 55px;
+                height: 64px;
+                border: 0.8px solid #ccc;
+                border-radius: 2px;
+              "
+            />
+            <img
+              src="../public/images/trust-icons/02.png"
+              alt=""
+              class="img-fluid"
+              style="
+                width: 55px;
+                height: 64px;
+                border: 0.8px solid #ccc;
+                border-radius: 2px;
+              "
+            />
+            <img
+              src="../public/images/trust-icons/03 1.png"
+              alt=""
+              class="img-fluid"
+              style="
+                width: 55px;
+                height: 64px;
+                border: 0.8px solid #ccc;
+                border-radius: 2px;
+              "
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--script links-->
+    <script src="../node-modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../node-modules/swiper/swiper-bundle.min.js"></script>
+    <script src="../node-modules/jquery/dist/jquery.min.js"></script>
+    <script src="../public/js/setting.js"></script>
+    <script src="../public/js/single_teacher.js"></script>
+
+  </body>
+</html>

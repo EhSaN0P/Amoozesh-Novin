@@ -128,7 +128,8 @@
 
 
 .slider-show-info{
-    width: 125px;
+    min-width: 125px;
+    width: fit-content !important;
     height: 48px;
     border-radius: 24px !important;
     border: 1px solid rgba(101, 147, 233, 1) !important;
@@ -136,14 +137,22 @@
     display: flex !important;
     justify-content: space-evenly ; 
     align-items: center !important;
-
+    gap: 0.5rem;
     padding-top: 16px;
     padding-right: 8px;
     padding-bottom: 16px;
     padding-left: 24px;
-
+    
 
 }
+
+.container .slider-show-info{
+    width: fit-content !important;
+    
+
+}
+
+
 .slider-icon-con{
     width: 32px !important ;
     height: 32px !important ;
