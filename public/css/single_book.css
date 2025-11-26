@@ -1,24 +1,82 @@
 .icon-box {
-            width: 28px;
-            height: 28px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background: #eef5ff;
-            color: #3574ff;
-            border-radius: 6px;
-            margin-left: 8px;
-            font-size: 18px;
-        }
-        .video-box img {
-            border-radius: 20px;
-        }
-        .video-play {
-            position:absolute;
-            top:50%;
-            left:50%;
-            transform:translate(-50%, -50%);
-            font-size:70px;
-            opacity:0.85;
-            cursor:pointer;
-        }
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef5ff;
+    color: #3574ff;
+    border-radius: 6px;
+    margin-left: 8px;
+    font-size: 18px;
+}
+.video-box img {
+    border-radius: 20px;
+}
+.video-play {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    font-size:70px;
+    opacity:0.85;
+    cursor:pointer;
+}
+.badge{
+    background-color: #EDF2FC;
+}
+.border-b {
+    position: relative;
+}
+
+.border-b::after {
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    right: 0;
+    width: 5rem; 
+    border-radius: 20px;
+    border-bottom: 3px solid #007bff;
+}
+.lesson-row { 
+    gap: 10px;
+}
+
+.lesson-title {
+    word-wrap: break-word;
+    line-height: 1.7;
+}
+
+.icon-box img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+
+.right-content img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+
+    .lesson-row {
+        flex-direction: column; 
+        align-items: flex-start !important;
+    }
+
+    .right-content {
+        width: 90%;
+        justify-content: flex-end !important; 
+        margin-right: 38px; 
+        margin-top: 10px;
+    }
+
+    .right-content img,
+    .right-content span {
+        margin-left: 5px;
+    }
+}
