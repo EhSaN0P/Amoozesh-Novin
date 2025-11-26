@@ -79,6 +79,19 @@
     .right-content span {
         margin-left: 5px;
     }
+    .headline{
+        width: 1%;
+    }
+}
+
+.headline{
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .headline{
+        width: 75%;
+    }
 }
 
 
