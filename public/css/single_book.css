@@ -86,3 +86,14 @@
     border-radius: 16px !important;
     width: 90% !important;
 }
+
+.course-price-box{
+    width: 75%;
+    text-align: center;
+}
+.course-price-box > .btn{
+    background-color: #EDF2FC;
+}
+.lock {
+    display: none;
+}
