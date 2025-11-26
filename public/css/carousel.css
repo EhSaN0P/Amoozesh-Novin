@@ -114,8 +114,8 @@
 }
 
 .sliders_heading > div:nth-child(1){
-    height: 7rem !important;
-    width: 15%;
+    /* height: 7rem !important;
+    width: 15%; */
     display: flex;
     justify-content: start ;
     align-items: center ;
@@ -303,7 +303,7 @@
 }
 
 .sliders_heading hr {
-  flex-grow: 1;          
+           
   border: none;
   border-top: 2px solid #ccc;
   margin: 0rem;             
@@ -673,4 +673,92 @@
 ========================== */
 .carousel-item .card {
     flex: 0 0 auto;
+}
+
+.sliders_heading {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+}
+
+/* متن */
+.sliders_heading > div:first-child {
+    white-space: nowrap;
+    font-size: 20px;
+    font-weight: 600;
+    flex-shrink: 0; /* جلوگیری از له شدن */
+}
+
+/* خط */
+.sliders_heading hr {
+    flex-grow: 1;           /* وسط را پر می‌کند */
+    border: none;
+    border-top: 1px solid #dcdcdc;
+    margin: 0;
+    transform: translateY(-2px); /* وقتی متن بلندتر شد می‌خوابد وسط */
+    flex-shrink: 1;         /* باعث نمی‌شود خود hr له شود */
+}
+
+/* دکمه‌ها */
+.nav-controllers-parent {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;         /* جلوگیری از جابجایی */
+    white-space: nowrap;
+}
+
+
+
+
+
+
+.sliders_heading {
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    gap: 16px !important;
+    margin-block: 2rem;
+}
+
+.sliders_heading > div:first-child {
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+    height: auto !important;
+    width: auto !important;
+}
+
+.sliders_heading hr {
+    flex-grow: 1 !important;
+    border: none !important;
+    border-top: 1px solid #dcdcdc !important;
+    margin: 0 !important;
+}
+
+.nav-controllers-parent {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    flex-shrink: 0 !important;
+    transform: translateY(0.5rem);
+}
+
+/* Mobile override */
+@media(max-width: 576px){
+    .sliders_heading > div:first-child{
+        width: auto !important;
+        height: auto !important;
+    }
+    .sliders_heading hr{
+        flex-grow: 1 !important;
+        width: auto !important;
+    }
+    .nav-controllers-parent{
+        width: auto !important;
+        height: auto !important;
+    }
 }
