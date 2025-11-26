@@ -39,10 +39,7 @@ new Swiper('.swiper-container3', {
     loop: true,
     slidesPerView: 4,  // تعداد اسلایدهای نمایش داده شده روی دسکتاپ
     spaceBetween: 30,  // فاصله بین اسلایدها
-    navigation: {
-        nextEl: '.sbn3',
-        prevEl: '.sbp3',
-    },
+  
     breakpoints: {
         1920: { slidesPerView: 4, spaceBetween: 40 }, // دسکتاپ بزرگ
         1280: { slidesPerView: 3, spaceBetween: 35 }, // لپ‌تاپ

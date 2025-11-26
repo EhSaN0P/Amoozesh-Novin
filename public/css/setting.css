@@ -390,3 +390,14 @@ html, body {
 header .nav-link{
     cursor: pointer;
 }
+
+
+
+
+.sliders_heading .btn-outline-primary img {
+    transform: translateY(2px);
+}
+
+.btn-outline-primary:hover img {
+    filter: brightness(0) invert(1);
+}
