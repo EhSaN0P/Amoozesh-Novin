@@ -80,3 +80,9 @@
         margin-left: 5px;
     }
 }
+
+
+.card-custom .badge{
+    border-radius: 16px !important;
+    width: 90% !important;
+}
