@@ -1,0 +1,400 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>صفحه اصلی</title>
+    <!--css links-->
+    <link rel="stylesheet" href="../public/css/setting.css" />
+    <link rel="stylesheet" href="../public/css/landing_page.css" />
+    <link rel="stylesheet" href="../public/css/school.css" />
+    <link rel="stylesheet" href="../public/css/login.css" />
+    <link rel="stylesheet" href="../public/css/carousel.css" />
+    <link rel="stylesheet" href="../public/css/single_book.css" />
+    <link
+      rel="stylesheet"
+      href="../node-modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node-modules/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!--Header-->
+    <header class="container-fluid py-3 col-xl-10 col-lg-10 col-md-11">
+      <!-- Desktop -->
+      <div class="d-none d-md-block mx-auto">
+        <div
+          class="custom-header custom-desktop-header mx-xl-5 my-xl-4 px-4 py-3 d-flex justify-content-between align-items-center"
+        >
+          <!-- Right: Logo + Nav -->
+          <div class="d-flex align-items-center gap-4">
+            <a class="d-flex align-items-center text-decoration-none">
+              <img
+                src="../public/images/logo/amoozesh-novin-logo.png"
+                class="img-fluid"
+                style="width: 80px"
+              />
+            </a>
+
+            <nav class="d-flex align-items-center gap-4">
+              <a href="#" class="text-secondary nav-link">خانه</a>
+              <a href="#" class="text-secondary nav-link">مدرسه‌ها</a>
+
+              <!-- Dropdown 1 -->
+              <div class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-secondary"
+                  data-bs-toggle="dropdown"
+                  >رشته‌ها</a
+                >
+                <ul class="dropdown-menu text-end">
+                  <li><a class="dropdown-item" href="#">مهندسی</a></li>
+                  <li><a class="dropdown-item" href="#">پزشکی</a></li>
+                  <li><a class="dropdown-item" href="#">علوم انسانی</a></li>
+                  <li><a class="dropdown-item" href="#">هنر</a></li>
+                </ul>
+              </div>
+
+              <!-- Dropdown 2 -->
+              <div class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-secondary"
+                  data-bs-toggle="dropdown"
+                  >اساتید</a
+                >
+                <ul class="dropdown-menu text-end">
+                  <li><a class="dropdown-item" href="#">اساتید برتر</a></li>
+                  <li><a class="dropdown-item" href="#">همه اساتید</a></li>
+                  <li><a class="dropdown-item" href="#">اساتید جدید</a></li>
+                </ul>
+              </div>
+
+              <!-- Dropdown 3 -->
+              <div class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-secondary"
+                  data-bs-toggle="dropdown"
+                  >کتاب‌ها</a
+                >
+                <ul class="dropdown-menu text-end">
+                  <li><a class="dropdown-item" href="#">کتاب‌های درسی</a></li>
+                  <li><a class="dropdown-item" href="#">کمک آموزشی</a></li>
+                  <li><a class="dropdown-item" href="#">دانشگاهی</a></li>
+                  <li><a class="dropdown-item" href="#">عمومی</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+          <!-- Left: Cart + Button -->
+          <div class="d-flex align-items-center gap-3">
+            <button class="btn border-primary rounded-circle p-2">
+              <img src="../public/icons/bag-2.svg" width="22" />
+            </button>
+            <button class="btn btn-primary px-4 py-2">ورود به حساب</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile -->
+      <div class="d-md-none">
+        <div class="px-3 py-2 custom-header">
+          <div class="d-flex justify-content-between align-items-center">
+            <button
+              class="btn border-primary rounded-circle p-2"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#mobileMenu"
+            >
+              <img src="../public/icons/menu.svg" width="22" />
+            </button>
+
+            <img
+              src="../public/images/logo/amoozesh-novin-logo.png"
+              width="60"
+            />
+
+            <button class="btn border-primary rounded-circle p-2">
+              <img src="../public/icons/bag-2.svg" width="22" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Offcanvas Modern -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+      <div class="offcanvas-header border-bottom">
+        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body p-0">
+        <div class="container px-3">
+          <!-- لینک‌های اصلی -->
+          <a
+            class="dropdown-item py-3 border-bottom rounded-3 mb-1 d-block text-end body-3 menu-link"
+            href="#"
+            >خانه</a
+          >
+          <a
+            class="dropdown-item py-3 border-bottom rounded-3 mb-1 d-block text-end body-3 menu-link"
+            href="#"
+            >مدرسه‌ها</a
+          >
+
+          <!-- Accordion بخش‌ها -->
+          <div class="accordion accordion-flush" id="mobileAccordion">
+            <!-- رشته‌ها -->
+            <div class="accordion-item border-0 mb-2">
+              <h2 class="accordion-header" id="headingRoshteha">
+                <button
+                  class="accordion-button collapsed text-end body-3 p-3 rounded-3 bg-white shadow-sm"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseRoshteha"
+                  aria-expanded="false"
+                  aria-controls="collapseRoshteha"
+                >
+                  رشته‌ها
+                </button>
+              </h2>
+              <div
+                id="collapseRoshteha"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingRoshteha"
+                data-bs-parent="#mobileAccordion"
+              >
+                <div class="accordion-body p-0 d-flex flex-column">
+                  <a
+                    class="dropdown-item py-2 px-3 border-bottom body-4 menu-link"
+                    href="#"
+                    >مهندسی</a
+                  >
+                  <a
+                    class="dropdown-item py-2 px-3 border-bottom body-4 menu-link"
+                    href="#"
+                    >پزشکی</a
+                  >
+                  <a
+                    class="dropdown-item py-2 px-3 border-bottom body-4 menu-link"
+                    href="#"
+                    >علوم انسانی</a
+                  >
+                  <a class="dropdown-item py-2 px-3 body-4 menu-link" href="#"
+                    >هنر</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- اساتید -->
+            <div class="accordion-item border-0 mb-2">
+              <h2 class="accordion-header" id="headingAsatid">
+                <button
+                  class="accordion-button collapsed text-end body-3 p-3 rounded-3 bg-white shadow-sm"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseAsatid"
+                  aria-expanded="false"
+                  aria-controls="collapseAsatid"
+                >
+                  اساتید
+                </button>
+              </h2>
+              <div
+                id="collapseAsatid"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingAsatid"
+                data-bs-parent="#mobileAccordion"
+              >
+                <div class="accordion-body p-0 d-flex flex-column">
+                  <a
+                    class="dropdown-item py-2 px-3 border-bottom body-4 menu-link"
+                    href="#"
+                    >اساتید برتر</a
+                  >
+                  <a
+                    class="dropdown-item py-2 px-3 border-bottom body-4 menu-link"
+                    href="#"
+                    >همه اساتید</a
+                  >
+                  <a class="dropdown-item py-2 px-3 body-4 menu-link" href="#"
+                    >اساتید جدید</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- کتاب‌ها -->
+            <div class="accordion-item border-0 mb-2">
+              <h2 class="accordion-header" id="headingKetabha">
+                <button
+                  class="accordion-button collapsed text-end body-3 p-3 rounded-3 bg-white shadow-sm"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseKetabha"
+                  aria-expanded="false"
+                  aria-controls="collapseKetabha"
+                >
+                  کتاب‌ها
+                </button>
+              </h2>
+              <div
+                id="collapseKetabha"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingKetabha"
+                data-bs-parent="#mobileAccordion"
+              >
+                <div class="accordion-body p-0 d-flex flex-column">
+                  <a
+                    class="dropdown-item py-2 px-3 border-bottom body-4 menu-link"
+                    href="#"
+                    >درسی</a
+                  >
+                  <a
+                    class="dropdown-item py-2 px-3 border-bottom body-4 menu-link"
+                    href="#"
+                    >کمک‌آموزشی</a
+                  >
+                  <a
+                    class="dropdown-item py-2 px-3 border-bottom body-4 menu-link"
+                    href="#"
+                    >دانشگاهی</a
+                  >
+                  <a class="dropdown-item py-2 px-3 body-4 menu-link" href="#"
+                    >عمومی</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="col-12 btn btn-primary">
+              ورود به حساب
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container col-10 px-3">
+      <nav aria-label="breadcrumb ">
+        <ol class="breadcrumb d-flex justify-content-end" dir="ltr">
+          <li class="breadcrumb-item active">عنوان فرضی</li>
+          <li class="breadcrumb-item active">عنوان فرضی</li>
+          <li class="breadcrumb-item"><a href="#">خانه</a></li>
+        </ol>
+      </nav>
+    </div>
+
+   
+    <!--Start Content-->  
+
+        <div class="container py-4">
+
+    <div class="row g-4">
+
+        <!-- LEFT Sidebar -->
+        <div class="col-lg-3">
+
+            <div class="card-custom mb-4 text-center">
+                <h6 class="mb-2">مدرس دوره : استاد نامجو</h6>
+                <span class="badge bg-primary text-light p-2 px-3">۲۵۰ دانشجویان</span>
+            </div>
+
+            <div class="card-custom mb-4">
+                <div class="d-flex justify-content-between">
+                    <span>قیمت دوره :</span>
+                    <strong class="text-primary fs-5">۵۰۰,۰۰۰ تومان</strong>
+                </div>
+
+                <hr>
+
+                <!-- Feature 1 -->
+                <div class="d-flex mb-3">
+                    <span class="icon-box">⏳</span>
+                    <div>
+                        <strong>۹ ساعت آموزش مفید</strong>
+                        <p class="small text-secondary mb-0">بیش از ۹ ساعت آموزش کاربردی برای رسیدن به درصد بالا.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="d-flex mb-3">
+                    <span class="icon-box">🗂️</span>
+                    <div>
+                        <strong>حجم نیم بها</strong>
+                        <p class="small text-secondary mb-0">تمام ویدیوها با حجم نیم‌بها قابل مشاهده‌اند.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="d-flex mb-3">
+                    <span class="icon-box">💻</span>
+                    <div>
+                        <strong>یادگیری آنلاین</strong>
+                        <p class="small text-secondary mb-0">بلافاصله پس از پرداخت، به دوره دسترسی پیدا کنید.</p>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary w-100 mt-3 py-2">خرید</button>
+
+            </div>
+
+        </div>
+
+
+        <!-- MAIN CONTENT -->
+        <div class="col-lg-9">
+
+            <div class="card-custom mb-4">
+                <div class="row g-3">
+
+                    <!-- TEXT -->
+                    <div class="col-md-8">
+                        <h4 class="fw-bold mb-2">آموزش نقشه‌کشی فنی رایانه‌ای</h4>
+                        <p class="text-secondary" style="text-align: justify;">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                            است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می‌باشد...
+                        </p>
+                    </div>
+
+                    <!-- IMAGE -->
+                    <div class="col-md-4 text-center">
+                        <img src="your-book-image.jpg" class="img-fluid rounded" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- VIDEO SECTION -->
+            <div class="card-custom">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5 class="fw-bold mb-0">ویدیو معرفی کتاب با استاد</h5>
+                    <div style="width:60px; height:3px; background:#0048ff; border-radius:5px;"></div>
+                </div>
+
+                <div class="position-relative video-box">
+                    <img src="your-video-thumbnail.jpg" class="img-fluid w-100" alt="">
+                    <div class="video-play">▶</div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <!--End Content-->
+
+
+    <!--script links-->
+    <script src="../node-modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../node-modules/swiper/swiper-bundle.min.js"></script>
+    <script src="../node-modules/jquery/dist/jquery.min.js"></script>
+    <script src="../public/js/setting.js"></script>
+    <script src="../public/js/landing_page.js"></script>
+  </body>
+</html>

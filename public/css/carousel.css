@@ -24,7 +24,6 @@
     background: rgba(198, 217, 255, 1) !important;
     border-radius: 44px !important;
     width: 50px !important;
-
     transform: scaleY(0.3);
     corner-shape: squircle;
 }
