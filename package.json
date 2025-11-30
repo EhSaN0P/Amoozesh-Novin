@@ -1,5 +1,5 @@
 {
-  "name": "amoozesh-novin",
+  "name": "amozesh-novin-final",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,6 +12,12 @@
   "type": "commonjs",
   "dependencies": {
     "bootstrap": "^5.3.8",
-    "jquery": "^3.7.1"
+    "jquery": "^3.7.1",
+    "swiper": "^12.0.3",
+    "video.js": "^8.23.4",
+    "videojs": "^1.0.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.3.3"
   }
 }

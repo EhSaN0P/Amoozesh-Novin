@@ -1,0 +1,699 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>صفحه اصلی</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../public/assets/css/main.css">
+
+  </head>
+  <body>
+   
+
+       <header class="container-fluid    py-3  ">
+      <!-- Desktop -->
+      <div class="d-none d-md-block  ">
+        <div
+          class="custom-header  mx-auto custom-desktop-header   px-4 py-3 d-flex justify-content-between align-items-center"
+        >
+          <!-- Right: Logo + Nav -->
+          <div class="d-flex align-items-center gap-4">
+            <a href="../views/landing_page.html" class="d-flex align-items-center text-decoration-none">
+              <img
+                src="../public/assets/icons/header/amozesh-novin-logo.svg"
+                class="img-fluid"
+                style="width: 80px"
+              />
+            </a>
+
+            <nav class="d-flex align-items-center gap-4">
+              <a href="../views/landing_page.html" class="text-secondary nav-link">خانه</a>
+              <a href="../views/school_archive.html" class="text-secondary nav-link">مدرسه‌ها</a>
+
+              <!-- Dropdown 1 -->
+              <div class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-secondary"
+                  data-bs-toggle="dropdown"
+                  >رشته‌ها</a
+                >
+                <ul class="dropdown-menu text-end">
+                  <li><a class="dropdown-item" href="../views/major_archive.html">مهندسی</a></li>
+                  <li><a class="dropdown-item" href="../views/major_archive.html">پزشکی</a></li>
+                  <li><a class="dropdown-item" href="../views/major_archive.html">علوم انسانی</a></li>
+                  <li><a class="dropdown-item" href="../views/major_archive.html">هنر</a></li>
+                </ul>
+              </div>
+
+              <!-- Dropdown 2 -->
+              <div class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-secondary"
+                  data-bs-toggle="dropdown"
+                  >اساتید</a
+                >
+                <ul class="dropdown-menu text-end">
+                  <li><a class="dropdown-item" href="../views/teacher_archive.html">اساتید برتر</a></li>
+                  <li><a class="dropdown-item" href="../views/teacher_archive.html">همه اساتید</a></li>
+                  <li><a class="dropdown-item" href="../views/teacher_archive.html">اساتید جدید</a></li>
+                </ul>
+              </div>
+
+              <!-- Dropdown 3 -->
+              <div class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-secondary"
+                  data-bs-toggle="dropdown"
+                  >کتاب‌ها</a
+                >
+                <ul class="dropdown-menu text-end">
+                  <li><a class="dropdown-item" href="../views/book_archive.html">کتاب‌های درسی</a></li>
+                  <li><a class="dropdown-item" href="../views/book_archive.html">کمک آموزشی</a></li>
+                  <li><a class="dropdown-item" href="../views/book_archive.html">دانشگاهی</a></li>
+                  <li><a class="dropdown-item" href="../views/book_archive.html">عمومی</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+          <!-- Left: Cart + Button -->
+          <div class="d-flex align-items-center gap-3">
+            <button class="btn border-primary rounded-circle p-2">
+              <img src="../public/assets/icons/header/bag-2.svg" width="22" />
+            </button>
+            <a href="user_dashboard.html" class="btn btn-primary px-4 py-2">ورود به حساب</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile -->
+      <div class="d-md-none ">
+        <div class="px-3 py-2 custom-header">
+          <div class="d-flex justify-content-between align-items-center">
+            <button
+              class="btn border-primary rounded-circle p-2"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#mobileMenu"
+            >
+              <img src="../public/assets/icons/header/menu.svg" width="22" />
+            </button>
+
+            <img
+              src="../public/assets/icons/header/amozesh-novin-logo.svg"
+              width="60"
+            />
+
+            <button class="btn border-primary rounded-circle p-2">
+              <img src="../public/assets/icons/header/bag-2.svg" width="22" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Offcanvas Modern -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+      <div class="offcanvas-header border-bottom">
+        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body p-0">
+        <div class="container px-3">
+          <!-- لینک‌های اصلی -->
+        
+
+          <!-- Accordion بخش‌ها -->
+          <div class="accordion rtl-accordion pt-4" id="accordionExample">
+              <div class="accordion-item">
+                <div class="btn w-100 text-end">
+                  <a class="nav-link p-2" href="../views/landing_page.html">خانه</a>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="btn w-100 text-end">
+                  <a class="nav-link p-2" href="../views/school_archive.html">مدرسه ها</a>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        رشته ها
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body d-flex flex-column ">
+                        <div class="btn text-end">
+                          <a  class="nav-link" href="../views/major_archive.html">مهندسی</a>
+                        </div>
+                        <div class="btn text-end">
+                          <a  class="nav-link" href="../views/major_archive.html">پزشکی</a>
+                        </div>
+                        <div class="btn text-end">
+                          <a  class="nav-link" href="../views/major_archive.html">هنر</a>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    اساتید
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body d-flex flex-column ">
+                    <div class="btn text-end">
+                          <a class="nav-link" href="../views/teacher_archive.html">اساتید برتر </a>
+                        </div>
+                        <div class="btn text-end">
+                          <a class="nav-link" href="../views/teacher_archive.html">همه اساتید</a>
+                        </div>
+                        <div class="btn text-end">
+                          <a class="nav-link" href="../views/teacher_archive.html">اساتید جدید</a>
+                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    کتاب ها
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body d-flex flex-column ">
+                     <div class="btn text-end">
+                          <a class="nav-link" href="../views/book_archive.html">تخصصی</a>
+                        </div>
+                        <div class="btn text-end">
+                          <a class="nav-link" href="../views/book_archive.html">پایه</a>
+                        </div>
+                        <div class="btn text-end">
+                          <a class="nav-link" href="../views/book_archive.html">عمومی</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <!--Start Content-->
+
+    <div class="container col-10 px-3">
+      <nav aria-label="breadcrumb ">
+        <ol class="breadcrumb d-flex justify-content-end" dir="ltr">
+          <li class="breadcrumb-item active">عنوان فرضی</li>
+          <li class="breadcrumb-item active">عنوان فرضی</li>
+          <li class="breadcrumb-item"><a href="#">خانه</a></li>
+        </ol>
+      </nav>
+    </div>
+
+    
+
+
+
+<!--First Slider-->
+<section class=" container slider-section py-4 col-lg-10  mx-auto" >
+    <div class="container">
+        <div id="bootstrapCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <div class="paginate-con">
+                    <button type="button" data-bs-target="#bootstrapCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#bootstrapCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#bootstrapCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+            </div>
+
+            <!-- Slides -->
+            <div class="carousel-inner ">
+                <div class="carousel-item  active">
+                    <img src="../public/assets/images/single_school/e5bb615bd47e6336460b6ec265faa09e3c7a7dbf.png" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../public/assets/images/single_school/e5bb615bd47e6336460b6ec265faa09e3c7a7dbf.png" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../public/assets/images/single_school/e5bb615bd47e6336460b6ec265faa09e3c7a7dbf.png" class="d-block w-100" alt="Slide 1">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+
+<div class="container position-relative col-lg-10 mx-auto  p-5">
+
+                 <div class="slider-show-info btn  ">
+                    <span class="slider-icon-con rounded-circle ">
+                        <img src="../public/assets/icons/carousels/star.svg" alt="">
+                    </span>
+                    <span class="caption-1 ">
+                        رشته ها
+                    </span>
+                </div>
+
+    <div class="sliders_heading">
+
+            <div >
+
+                معرفی رشته ها
+
+            </div>
+
+            <hr >
+
+
+            <div class="nav-controllers-parent">
+                <div class="swiper-button-prev sbp2">
+                    <img src="../public/assets/icons/carousels/arrow-right.svg" alt="next" />
+                </div>
+                <div class="swiper-button-next sbn2">
+                    <img src="../public/assets/icons/carousels/arrow-left.svg" alt="prev" />
+                </div>
+            </div>
+    </div>
+
+
+
+    <!-- Slider main container -->
+  <div class="swiper-container2 overflow-hidden">
+    <!-- Wrapper -->
+    <div class="swiper-wrapper swiper-wrapper-majors">
+
+        <div class="swiper-slide">
+            <div class="major-card mx-auto card introduce-card d-flex justify-content-between align-items-center">
+                <div class="icon-parent">
+                    <img src="../public/assets/icons/major_archive/majors-icon/it.svg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                    <h5 class="card-title">علوم کامپیوتر</h5>
+                    <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                    <a href="single_major.html" class="btn btn-outline-primary rounded-5 col-12">
+                        مشاهده بیشتر
+                        <img src="../public/assets/icons/major_archive/arrow-left-more.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+ <div class="swiper-slide">
+            <div class="major-card mx-auto card introduce-card d-flex justify-content-between align-items-center">
+                <div class="icon-parent">
+                    <img src="../public/assets/icons/major_archive/majors-icon/it.svg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                    <h5 class="card-title">علوم کامپیوتر</h5>
+                    <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                    <a href="single_major.html" class="btn btn-outline-primary rounded-5 col-12">
+                        مشاهده بیشتر
+                        <img src="../public/assets/icons/major_archive/arrow-left-more.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="major-card mx-auto card introduce-card d-flex justify-content-between align-items-center">
+                <div class="icon-parent">
+                    <img src="../public/assets/icons/major_archive/majors-icon/it.svg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                    <h5 class="card-title">علوم کامپیوتر</h5>
+                    <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                    <a href="single_major.html" class="btn btn-outline-primary rounded-5 col-12">
+                        مشاهده بیشتر
+                        <img src="../public/assets/icons/major_archive/arrow-left-more.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="major-card mx-auto card introduce-card d-flex justify-content-between align-items-center">
+                <div class="icon-parent">
+                    <img src="../public/assets/icons/major_archive/majors-icon/it.svg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                    <h5 class="card-title">علوم کامپیوتر</h5>
+                    <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                    <a href="single_major.html" class="btn btn-outline-primary rounded-5 col-12">
+                        مشاهده بیشتر
+                        <img src="../public/assets/icons/major_archive/arrow-left-more.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="major-card mx-auto card introduce-card d-flex justify-content-between align-items-center">
+                <div class="icon-parent">
+                    <img src="../public/assets/icons/major_archive/majors-icon/it.svg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                    <h5 class="card-title">علوم کامپیوتر</h5>
+                    <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                    <a href="single_major.html" class="btn btn-outline-primary rounded-5 col-12">
+                        مشاهده بیشتر
+                        <img src="../public/assets/icons/major_archive/arrow-left-more.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</div>
+
+
+
+
+<div class="container position-relative col-lg-10  mx-auto  p-5">
+
+                <div class="slider-show-info btn  ">
+                    <span class="slider-icon-con rounded-circle ">
+                        <img src="../public/assets/icons/carousels/star.svg" alt="">
+                    </span>
+                    <span class="caption-1 ">
+                        اساتید
+                    </span>
+                </div>
+
+                <div class="sliders_heading">
+
+                    <div >
+                        معرفی اساتید
+
+                    </div>
+
+                    <hr >
+
+
+                     <a href="#" class="py-2 py-lg-3 d-flex justify-content-evenly align-items-center btn btn-outline-primary rounded-5 " style="width: 176px !important;height:fit-content !important;text-wrap: nowrap;">
+                            مشاهده بیشتر
+                                <img src="../public/assets/icons/carousels/arrow-left.svg" alt="prev" />
+                        </a>
+                    
+                </div>
+
+
+
+    <!-- Slider main container -->
+    <div class="swiper-container3 ">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide ">
+                 <a href="single_teacher.html" class=" teacher-card  text-bg-dark border-0 shadow-sm p-0" >
+                    <img src="../public/assets/images/teacher_archive/t1.png" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <div class="card-con">
+                            <h5 class="teacher-card-title">
+                                آقای احمدی
+                            </h5>
+                            <p class="teacher-card-text">
+                                دبیر ریاضی
+                            </p>
+                        </div>
+
+                    </div>
+                </a>
+
+            </div>
+
+        
+            <div class="swiper-slide ">
+                 <a href="single_teacher.html" class=" teacher-card  text-bg-dark border-0 shadow-sm p-0" >
+                    <img src="../public/assets/images/teacher_archive/t2.png" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <div class="card-con">
+                            <h5 class="teacher-card-title">
+                                آقای احمدی
+                            </h5>
+                            <p class="teacher-card-text">
+                                دبیر ریاضی
+                            </p>
+                        </div>
+
+                    </div>
+                </a>
+
+            </div>
+
+
+            <div class="swiper-slide ">
+                 <a href="single_teacher.html" class=" teacher-card  text-bg-dark border-0 shadow-sm p-0" >
+                    <img src="../public/assets/images/teacher_archive/t3.png" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <div class="card-con">
+                            <h5 class="teacher-card-title">
+                                آقای احمدی
+                            </h5>
+                            <p class="teacher-card-text">
+                                دبیر ریاضی
+                            </p>
+                        </div>
+
+                    </div>
+                </a>
+
+            </div>
+
+
+                <div class="swiper-slide ">
+                 <a href="single_teacher.html" class=" teacher-card  text-bg-dark border-0 shadow-sm p-0" >
+                    <img src="../public/assets/images/teacher_archive/t4.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <div class="card-con">
+                            <h5 class="teacher-card-title">
+                                آقای احمدی
+                            </h5>
+                            <p class="teacher-card-text">
+                                دبیر ریاضی
+                            </p>
+                        </div>
+
+                    </div>
+                </a>
+
+            </div>
+
+
+            <div class="swiper-slide ">
+                 <a href="single_teacher.html" class=" teacher-card  text-bg-dark border-0 shadow-sm p-0" >
+                    <img src="../public/assets/images/teacher_archive/t5.png" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <div class="card-con">
+                            <h5 class="teacher-card-title">
+                                آقای احمدی
+                            </h5>
+                            <p class="teacher-card-text">
+                                دبیر ریاضی
+                            </p>
+                        </div>
+
+                    </div>
+                </a>
+
+            </div>
+
+
+            <div class="swiper-slide ">
+                 <a href="single_teacher.html" class=" teacher-card  text-bg-dark border-0 shadow-sm p-0" >
+                    <img src="../public/assets/images/teacher_archive/t1.png" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <div class="card-con">
+                            <h5 class="teacher-card-title">
+                                آقای احمدی
+                            </h5>
+                            <p class="teacher-card-text">
+                                دبیر ریاضی
+                            </p>
+                        </div>
+
+                    </div>
+                </a>
+
+            </div>
+
+        
+            <div class="swiper-slide  ">
+                 <a href="single_teacher.html" class=" teacher-card  text-bg-dark border-0 shadow-sm p-0" >
+                    <img src="../public/assets/images/teacher_archive/t2.png" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <div class="card-con">
+                            <h5 class="teacher-card-title">
+                                آقای احمدی
+                            </h5>
+                            <p class="teacher-card-text">
+                                دبیر ریاضی
+                            </p>
+                        </div>
+
+                    </div>
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+    <!-- banner -->
+    <div class="container">
+      <div class="contact-banner">
+        <div class="row g-4 align-items-start">
+          <!-- Header text -->
+          <div
+            class="d-flex justify-content-evenly align-items-center col-12 col-lg-4"
+          >
+            <img class="my-3" src="../public/assets/images/single_school/call-calling.png" alt="" />
+            <h2 class="section-title mb-2 fs-1">
+              با ما در <br /><span class="text-color">ارتباط</span> باشید
+            </h2>
+          </div>
+          <div class="col g-4 w-50">
+            <!-- Phone -->
+            <div class="content row-12 row-lg-4">
+              <div class="contact-item d-flex align-items-center gap-3 h-100">
+                <div class="icon icon-color rounded-pill">
+                  <img src="../public/assets/icons/single_school/call-calling.svg" alt="" />
+                </div>
+                <div class="flex-grow-1">
+                  <div class="label mb-1">شماره‌های تماس ما</div>
+                  <div class="d-flex flex-wrap align-items-center">
+                    <span class="value">09121334567</span>
+                    <span class="divider-dot"></span>
+                    <span class="value">09121334567</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Address -->
+            <div class="content row-12 row-lg-4 w-100 h-50">
+              <div class="contact-item d-flex align-items-center gap-3 h-100">
+                <div class="icon icon-color rounded-pill">
+                  <img src="../public/assets/icons/single_school/location.svg" alt="" />
+                </div>
+                <div class="flex-grow-1">
+                  <div class="label mb-1">آدرس ما</div>
+                  <div class="value">
+                    ابتدای خیابان آزادی، بعد از جمالزاده شمالی، کوچه پاراحمدی،
+                    پلاک ۳
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--End Content-->
+
+    <!--Footer-->
+        <footer class=" my-4 py-3 px-3">
+    <!-- Top Row: Logo & Brand + Description -->
+    <div class="container d-flex flex-column flex-md-row align-items-center align-items-md-stretch justify-content-evenly gap-3 py-2">
+        <!-- Brand Title & Circle -->
+        <div class="d-flex flex-row-reverse align-items-center gap-2 justify-content-center" style="width:122px; min-width:122px; max-width:122px;">
+            <span class="fw-semibold  text-gray-700 text-nowrap">آموزش نوین</span>
+            <span class="d-inline-flex align-items-center justify-content-center rounded-circle" style="background:#1D59CB; width:32px; height:32px;"></span>
+        </div>
+        <!-- Description -->
+        <div class="text-end  text-gray-500 flex-grow-1">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم ازت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی  کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، ت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد
+        </div>
+    </div>
+
+    <!-- Footer Navigation Links -->
+    <nav class="container my-3 py-2 px-3  rounded-3 d-flex flex-wrap justify-content-evenly align-items-center gap-2">
+        <a href="../views/landing_page.html" class="d-flex flex-column align-items-center text-primary text-decoration-none px-2 py-1">
+            <span class="fs-6">خانه</span>
+            <span class="d-block w-100 bg-primary rounded" style="height:2px;opacity:0;"></span>
+        </a>
+        <a href="../views/school_archive.html" class="d-flex flex-column align-items-center text-primary text-decoration-none px-2 py-1">
+            <span class="fs-6">مدرسه ها</span>
+            <span class="d-block w-100 bg-primary rounded" style="height:2px;"></span>
+        </a>
+        <a href="../views/major_archive.html" class="d-flex flex-column align-items-center text-primary text-decoration-none px-2 py-1">
+            <span class="fs-6">رشته ها</span>
+            <span class="d-block w-100 bg-primary rounded" style="height:2px; opacity:0;"></span>
+        </a>
+        <a href="../views/teacher_archive.html" class="d-flex flex-column align-items-center text-primary text-decoration-none px-2 py-1">
+            <span class="fs-6">اساتید</span>
+            <span class="d-block w-100 bg-primary rounded" style="height:2px; opacity:0;"></span>
+        </a>
+        <a href="../views/book_archive.html" class="d-flex flex-column align-items-center text-primary text-decoration-none px-2 py-1">
+            <span class="fs-6">کتاب ها</span>
+            <span class="d-block w-100 bg-primary rounded" style="height:2px; opacity:0;"></span>
+        </a>
+    </nav>
+
+    <!-- Footer Icons Section -->
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-evenly gap-3 py-2">
+        <!-- Contact -->
+        <div class="d-flex flex-column align-items-center align-items-md-start gap-2" style="max-width:180px;">
+            <span class="fw-semibold text-gray-700">ارتباط با <span class="text-primary">ما</span></span>
+            <div class="d-flex align-items-center gap-3">
+                <div class=" cursor-pointer border border-primary rounded p-2 d-flex align-items-center justify-content-center" style="width:44px; height:44px;">
+                    <img src="../public/assets/icons/footer/call-calling.svg" alt="call" class="img-fluid">
+                </div>
+                <span class="text-gray-700">0912-21326545</span>
+            </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="d-flex flex-column align-items-center gap-4" style="max-width:220px;">
+            <span class="fw-semibold text-gray-700 text-nowrap  ">لینک شبکه های اجتماعی <span class="text-primary">آموزش نوین</span></span>
+            <div class="d-flex align-items-center gap-3">
+                <img src="../public/assets/icons/footer/youtube.svg" alt="" class="cursor-pointer img-fluid" style="width:30px; height:40px;">
+                <img src="../public/assets/icons/footer/telegramsvg.svg" alt="" class="cursor-pointer img-fluid" style="width:30px; height:40px;">
+                <img src="../public/assets/icons/footer/linkedin.svg" alt="" class="cursor-pointer img-fluid" style="width:30px; height:40px;">
+                <img src="../public/assets/icons/footer/instagram.svg" alt="" class="cursor-pointer img-fluid" style="width:30px; height:40px;">
+            </div>
+        </div>
+
+        <!-- Trust Icons -->
+        <div class="d-flex flex-column align-items-center align-items-md-start gap-2" style="max-width:180px;">
+            <span class="fw-semibold text-gray-700">نماد <span class="text-primary">اعتماد</span></span>
+            <div class="d-flex align-items-center gap-2 ">
+                <img  src="../public/assets/images/footer/trust-icons/01.png" alt="" class="img-fluid cursor-pointer" style="width:55px; height:64px; border:0.8px solid #ccc; border-radius:2px;">
+                <img  src="../public/assets/images/footer/trust-icons/02.png" alt="" class="img-fluid cursor-pointer" style="width:55px; height:64px; border:0.8px solid #ccc; border-radius:2px;">
+                <img  src="../public/assets/images/footer/trust-icons/03 1.png" alt="" class="img-fluid cursor-pointer" style="width:55px; height:64px; border:0.8px solid #ccc; border-radius:2px;">
+            </div>
+        </div>
+    </div>
+</footer> 
+
+    <!--script links-->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../public/assets/js/setting.js"></script>
+    <script src="../public/assets/js/landing_page.js"></script>
+  </body>
+</html>
+
+
+
+

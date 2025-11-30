@@ -1,0 +1,255 @@
+
+
+
+
+.scroll-box {
+    max-height: 150px; /* ارتفاع ثابت برای بخش باز شده */
+    overflow-y: auto;  /* اسکرول عمودی */
+}
+
+/* جعبه فیلتر */
+.filter-box {
+    background: #fdfdfd;
+    border-radius: 16px;
+    border: 1px solid #ddd;
+    height: fit-content;
+    
+}
+
+/* آکاردئون */
+.accordion-button {
+    background-color: #F8F8F8 !important;
+    color: #919191 !important;
+    font-weight: 600;
+}
+
+.filter-box h5{
+    color: var(--color-primary-500);
+}
+
+
+
+.accordion-button:hover{
+    color: white;
+}
+.accordion-button::after{
+    color: #919191 !important;
+    transform: rotate(0deg) !important;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #007bff;
+    color: #919191 !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg) !important;
+        color: #919191 !important;
+
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* بخش داخلی با اسکرول */
+.scroll-box {
+    max-height: 150px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+.scroll-box::-webkit-scrollbar {
+    width: 6px;
+}
+.scroll-box::-webkit-scrollbar-thumb {
+    background: #007bff;
+    border-radius: 4px;
+}
+.scroll-box::-webkit-scrollbar-track {
+    background: #eaeaea;
+}
+
+/* چک‌باکس‌ها */
+.form-check-label {
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+.form-check-input:checked + .form-check-label {
+    color: #007bff;
+    font-weight: 500;
+}
+
+
+
+
+
+
+@media (max-width: 500px) {
+  
+    .filter-box{
+    width: 328px !important; 
+    margin: auto;  
+    }
+
+}
+
+
+
+
+@media (max-width: 652px) {
+  
+    .filter-box{
+    width: 328px !important; 
+    margin: auto;  
+    }
+
+    .school-card{
+        transform: translateX(2.5rem);
+    }
+
+}
+
+
+
+
+.swiper-slide .card{
+    box-shadow: 0px 4px 20px 0px #1D59CB14 !important;
+    cursor: pointer;
+}
+
+
+
+.swiper-slide .card {
+    border-bottom: 5px solid rgba(0, 84, 243, 0) !important;
+
+}
+
+.swiper-slide .card:hover {
+
+    border-bottom: 5px solid rgb(0, 91, 255) !important;
+
+}
+
+
+
+.school-card{
+    width:320px !important;
+    height: 440px !important;
+    
+}
+
+.school-card a{
+    width: 197px !important;
+    height: 48px !important;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.school-card a  img{
+    width: 24px;
+    height: 24px;
+    
+}
+
+
+
+
+
+.archive-cards .teacher-card{
+    width: 320px !important;
+    height: 308px !important;
+    padding: 0;
+
+}
+
+.archive-cards .teacher-card img{
+    object-fit: cover ;
+    object-position: top;     
+    height: 100%;
+
+}
+
+
+
+.card-img-overlay{
+    width: 280px ;
+    height: 115px;
+    margin-inline: auto;
+    transform: translateY(12rem);
+    box-shadow: 0 0 5px #fff;
+}
+
+
+
+.card-con{
+    position: absolute !important;
+    bottom: 0% !important;
+    left: 0 !important;
+    width: 100% !important;
+    border-radius: 0px !important;
+
+
+}
+
+.card-con:hover{backdrop-filter: blur(4px);}
+
+
+
+.swiper-slide .teacher-card{
+    width: 320px !important;
+}
+
+
+.swiper-slide .teacher-card img{
+    border-radius: 8px !important;   
+    width: 320px !important;
+    object-fit: cover;
+}
+
+
+.swiper-slide .teacher-card .card-img-overlay {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-10%) translateY(17.7rem);
+    width: 266px;
+    height: 115px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px 0.5px white ;
+    
+}
+
+
+
+.tab-content .cards-grid .book-card{
+    width: 300px !important;    
+    height: fit-content !important;
+    background: #fff;
+    border-radius: 16px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px #0001;
+    margin: auto;
+    margin-bottom: 1rem;
+    
+}
+
+
+
+.swiper-slide .school-card {
+    flex-shrink: 0 !important;
+    width: 320px !important; /* یا اندازه واقعی کارت */
+}
+
+
+
+.swiper-slide .teacher-card {
+    transform: translateX(1rem) !important;
+}
+
+.swiper-slide .book-card{
+    transform: translateX(5rem) !important;
+}

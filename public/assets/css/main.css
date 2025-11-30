@@ -1,0 +1,17 @@
+@import url("landing_page.css");
+@import url("carousel.css");
+@import url("login.css");
+@import url("setting.css");
+@import url("verification.css");
+@import url("user_dashboard.css");
+@import url("school.css");
+@import url("single_teacher.css");
+@import url("single_book.css");
+@import url("single_major.css");
+@import url("major_archive.css");
+@import url("book_archive.css");
+@import url("school_archive.css");
+@import url("teacher_archive.css");
+@import url("video-js.css");
+@import url("../../../node_modules/bootstrap/dist/css/bootstrap.min.css");
+@import url("../../../node_modules/swiper/swiper-bundle.min.css");
