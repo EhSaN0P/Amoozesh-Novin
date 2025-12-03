@@ -213,21 +213,25 @@
       </div>
     </div>
 
-    
-    <div class="container resp-w d-flex align-items-center justify-content-center mt-5">
-        <div class="login-box d-flex flex-column align-items-center justify-content-center  gap-2">
-            <h3 class="mb-3 text-center text-primary">کد تایید</h3>
-            
-            <form class="w-75">
-                <div class="mb-3 w-100  d-flex flex-column align-items-center justify-content-center gap-2">
-                    <label class="form-label mb-4 fs-5">کد تایید برای شماره 09000000000 پیامک شد</label>
-                    <input type="number" name="phone" class="form-control text-center fs-1 w-100 h-3rem" placeholder="- - - -" required>
-                    <p class="fs-sm">0:30 مانده تا دریافت مجدد پیامک لطفا کد ارسال شده را وارد کنید.</p>
-                </div>
-                <button type="submit" class="btn btn-primary w-100 h-3rem">ارسال کد</button>
-            </form>
-        </div>
-    </div>
+
+       <div class="container resp-w d-flex align-items-center justify-content-center mt-5">
+           <div class="login-box d-flex flex-column align-items-center justify-content-center gap-2">
+               <h3 class="mb-3 text-center text-primary">کد تایید</h3>
+               <form class="w-75" id="verifyForm">
+                   <div class="mb-3 w-100 d-flex flex-column align-items-center justify-content-center gap-2">
+                       <label class="form-label mb-2 fs-5">
+                           کد تایید برای شماره 09000000000 پیامک شد
+                       </label>
+                       <input type="text" id="codeInput" inputmode="numeric" maxlength="4" class="form-control text-center fs-1 w-100 h-3rem" placeholder="- - - -">
+                       <p class="fs-sm text-danger d-none" id="errorMsg">
+                           کد وارد شده اشتباه است.
+                       </p>
+                       <p class="fs-sm">0:30 مانده تا دریافت مجدد پیامک لطفا کد ارسال شده را وارد کنید.</p>
+                   </div>
+                   <button type="submit" class="btn btn-primary w-100 h-3rem">ارسال کد</button>
+               </form>
+           </div>
+       </div>
 
 
     <!--End Content-->
@@ -241,6 +245,7 @@
     <script src="../node_modules/jquery/dist/jquery.min.js"></script> -->
     <script src="../public/assets/js/setting.js"></script>
     <script src="../public/assets/js/landing_page.js"></script>
+    <script src="../public/assets/js/verification.js"></script>
   </body>
 </html>
 
