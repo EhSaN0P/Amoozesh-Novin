@@ -205,12 +205,12 @@
 
 /* ===== Custom Swiper Pagination Bullets ===== */
 
-.resp-w .swiper-pagination {
+.multi-carousel-container .swiper-pagination {
   position: relative !important;
   margin-top: 30px;
 }
 
-.resp-w .swiper-pagination-bullet {
+.multi-carousel-container .swiper-pagination-bullet {
   width: 12px !important;
   height: 12px !important;  
   border-radius: 14px !important;
@@ -219,7 +219,7 @@
 }
 
 /* حالت فعال (bullet-active) */
-.resp-w .swiper-pagination-bullet-active {
+.multi-carousel-container .swiper-pagination-bullet-active {
   
   width: 50px !important;
   height: 12px !important;  
@@ -230,7 +230,7 @@
 
 
 
-.resp-w .tabs .active{
+.multi-carousel-container .tabs .active{
   background-color: var(--color-primary-500);
   color: #fff;
 }
