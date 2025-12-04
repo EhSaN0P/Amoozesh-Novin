@@ -529,3 +529,11 @@ header .nav-link{
 
 
 }
+
+
+
+
+
+.ls-tight { letter-spacing: -0.5px; }
+.ls-normal { letter-spacing: 0; }
+.ls-wide { letter-spacing: 1px; }
