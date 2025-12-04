@@ -287,8 +287,8 @@ html::-webkit-scrollbar-thumb,body::-webkit-scrollbar-thumb{
 .rtl-accordion .accordion-button::after  {
   margin-left: 0; /* حذف فاصله پیش‌فرض */
   margin-right: auto; /* حرکت فلش به سمت چپ */
-  transform: rotate(180deg); /* اگر میخوای فلش جهت درست باشه */
-  
+  transform: rotate(160deg); /* اگر میخوای فلش جهت درست باشه */
+
 }
 
 
@@ -297,6 +297,7 @@ html::-webkit-scrollbar-thumb,body::-webkit-scrollbar-thumb{
 
 .accordion-item + .accordion-item {
     margin-top: 0.5rem;
+    position: relative;
 }
 
 .accordion-body a {
@@ -311,13 +312,12 @@ html::-webkit-scrollbar-thumb,body::-webkit-scrollbar-thumb{
     padding-top: 32px;
     padding-bottom: 32px;
     border-bottom-width: 1px;
-    margin: auto !;
+    margin: auto !important;
 }
 
 .custom-desktop-header{
     height: 137px !important;
 }
-
 
 
 .custom-desktop-header >div >button:nth-child(1){
@@ -348,6 +348,9 @@ html::-webkit-scrollbar-thumb,body::-webkit-scrollbar-thumb{
     gap: 10px;
     font-size: 1rem;
     text-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -509,4 +512,28 @@ header .nav-link{
 
     }
 
-  
+
+
+.custom-shadow{
+    box-shadow: 0px 4px 24px 0px #0000000F;
+}
+
+
+.accordion-item img{
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 32px !important;
+    corner-shape: squircle;
+    object-fit: cover;
+    box-shadow: 0 0 5px !important;
+
+
+}
+
+
+
+
+
+.ls-tight { letter-spacing: -0.5px; }
+.ls-normal { letter-spacing: 0; }
+.ls-wide { letter-spacing: 1px; }
