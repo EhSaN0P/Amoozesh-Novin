@@ -138,16 +138,13 @@
         width: 100%;
     }
 
-@media (min-width: 576px) {
+
+
+@media (max-width: 768px) {
     .lesson-img{
         width: 100%;
         padding: 10px;
     }
-}
-
-
-@media (max-width: 768px) {
-
     .lesson-row {
         flex-direction: column;
         align-items: flex-start !important;
