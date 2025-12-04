@@ -1,29 +1,35 @@
-new Swiper(".mySwiper", {
-    loop: true,
-    spaceBetween: 40,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
 
-    slidesPerView: 1, // موبایل
 
-    breakpoints: {
-        768: {            // تبلت
-            spaceBetween: 20,
-        },
-        1280: {           // لپ‌تاپ
-            spaceBetween: 30,
-        },
-        1920: {           // دسکتاپ بزرگ
-            spaceBetween: 40,
-        }
-    }
-});
+singleSliderTouchable("#bootstrapCarousel")
+
+
+
+// new Swiper(".mySwiper", {
+//     loop: true,
+//     spaceBetween: 40,
+//     autoplay: {
+//         delay: 3000,
+//         disableOnInteraction: false,
+//     },
+//     pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true,
+//     },
+
+//     slidesPerView: 1, // موبایل
+
+//     breakpoints: {
+//         768: {            // تبلت
+//             spaceBetween: 20,
+//         },
+//         1280: {           // لپ‌تاپ
+//             spaceBetween: 30,
+//         },
+//         1920: {           // دسکتاپ بزرگ
+//             spaceBetween: 40,
+//         }
+//     }
+// });
 
 
 
