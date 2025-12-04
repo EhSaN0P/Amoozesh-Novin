@@ -47,6 +47,59 @@
 }
 
 
+.landing-slider img{
+    width:auto;
+    height:540px !important;
+    object-fit:cover;
+    border-radius: 44px;
+
+}
+
+
+@media (max-width:992px){
+    .landing-slider img{
+        width:auto;
+        height:356px !important;
+        object-fit:cover;
+        border-radius: 44px;
+        object-position: 15% 10%;
+
+    }
+}
+
+
+.carousel-item .carousel-item-texts{
+    position: absolute;
+    z-index: 23;
+    right: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 2rem;
+    text-shadow: 0 0 5px rgb(228, 217, 197);
+}
+.carousel-item-title{
+
+    color: var(--color-primary-950);
+    font-weight: 700;
+    line-height: 44px;
+    text-align: right;
+
+
+}
+
+.carousel-item-paragraph{
+
+    color: var(--color-primary-950);
+    font-weight: 400;
+    line-height: 40px;
+    text-align: right;
+    width: 70%;
+
+}
 
 
 .paginate-con {
@@ -304,25 +357,11 @@
     display: flex;
     justify-content: end !important;
     position: relative !important;
-    width:30% !important;
-    height: 7rem !important;
-    padding: 2%;
+    width: fit-content;
 
 
 }
 
-.swiper-button-next, .swiper-button-prev {
-    width: 40px !important;
-    height: 40px !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    border-radius: 28px;
-    border: 0.71px solid rgba(29, 89, 203, 1);
-    position: relative!important;
-    
-}
 
 
 .sliders_heading > div:nth-child(1){
@@ -331,7 +370,6 @@
     display: flex;
     justify-content: start ;
     align-items: center ;
-    font-size: 1;
     font-weight: bolder;
 
 }
@@ -350,7 +388,9 @@
     content: none !important; /* یا display: none */
 }
 
-
+.swiper-button-prev{
+    transform: translateX(-2rem);
+}
 
 .slider-icon-con{
     width: 32px !important ;
@@ -407,7 +447,7 @@
     width:30% !important;
     height: 7rem !important;
     padding: 2%;
-    
+
 
 
 }
@@ -523,7 +563,7 @@
     border-radius: 28px;
     border: 0.71px solid rgba(29, 89, 203, 1);
     position: relative!important;
-    
+
 }
 
 

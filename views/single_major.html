@@ -118,97 +118,103 @@
     </header>
 
     <!-- Mobile Offcanvas Modern -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
-      <div class="offcanvas-header border-bottom">
-        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
-      </div>
-      <div class="offcanvas-body p-0">
-        <div class="container px-3">
-          <!-- لینک‌های اصلی -->
-        
-
-          <!-- Accordion بخش‌ها -->
-          <div class="accordion rtl-accordion pt-4" id="accordionExample">
-              <div class="accordion-item">
-                <div class="btn w-100 text-end">
-                  <a class="nav-link p-2" href="../views/landing_page.html">خانه</a>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <div class="btn w-100 text-end">
-                  <a class="nav-link p-2" href="../views/school_archive.html">مدرسه ها</a>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        رشته ها
-                      </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                      <div class="accordion-body d-flex flex-column ">
-                        <div class="btn text-end">
-                          <a  class="nav-link" href="../views/major_archive.html">مهندسی</a>
-                        </div>
-                        <div class="btn text-end">
-                          <a  class="nav-link" href="../views/major_archive.html">پزشکی</a>
-                        </div>
-                        <div class="btn text-end">
-                          <a  class="nav-link" href="../views/major_archive.html">هنر</a>
-                        </div>
-                      </div>
-                    </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    اساتید
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body d-flex flex-column ">
-                    <div class="btn text-end">
-                          <a class="nav-link" href="../views/teacher_archive.html">اساتید برتر </a>
-                        </div>
-                        <div class="btn text-end">
-                          <a class="nav-link" href="../views/teacher_archive.html">همه اساتید</a>
-                        </div>
-                        <div class="btn text-end">
-                          <a class="nav-link" href="../views/teacher_archive.html">اساتید جدید</a>
-                        </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    کتاب ها
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                  <div class="accordion-body d-flex flex-column ">
-                     <div class="btn text-end">
-                          <a class="nav-link" href="../views/book_archive.html">تخصصی</a>
-                        </div>
-                        <div class="btn text-end">
-                          <a class="nav-link" href="../views/book_archive.html">پایه</a>
-                        </div>
-                        <div class="btn text-end">
-                          <a class="nav-link" href="../views/book_archive.html">عمومی</a>
-                        </div>
-                    </div>
-                </div>
-              </div>
-          </div>
+       <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+           <div class="offcanvas-header border-bottom">
+               <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+           </div>
+           <div class="offcanvas-body p-0">
+               <div class="container px-3">
+                   <!-- لینک‌های اصلی -->
 
 
+                   <!-- Accordion بخش‌ها -->
+                   <div class="accordion rtl-accordion pt-4" id="accordionExample">
+                       <div class="accordion-item">
+                           <a href="../views/user_dashboard.html" class="btn btn-primary w-100 d-flex justify-content-between align-items-center ">
+                               <span class="nav-link p-2" >رفتن به حساب کاربری</span>
+                               <img src="../public/assets/images/teacher_archive/t1.png">
+                           </a>
+                       </div>
+                       <div class="accordion-item">
+                           <div class="btn w-100 text-end">
+                               <a class="nav-link p-2" href="../views/landing_page.html">خانه</a>
+                           </div>
+                       </div>
+
+                       <div class="accordion-item">
+                           <div class="btn w-100 text-end">
+                               <a class="nav-link p-2" href="../views/school_archive.html">مدرسه ها</a>
+                           </div>
+                       </div>
+
+                       <div class="accordion-item">
+                           <h2 class="accordion-header" id="headingOne">
+                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                   رشته ها
+                               </button>
+                           </h2>
+                           <div id="collapseOne" class="accordion-collapse collapse  " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                               <div class="accordion-body d-flex flex-column ">
+                                   <div class="btn text-end">
+                                       <a  class="nav-link" href="../views/major_archive.html">مهندسی</a>
+                                   </div>
+                                   <div class="btn text-end">
+                                       <a  class="nav-link" href="../views/major_archive.html">پزشکی</a>
+                                   </div>
+                                   <div class="btn text-end">
+                                       <a  class="nav-link" href="../views/major_archive.html">هنر</a>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="accordion-item">
+                           <h2 class="accordion-header" id="headingTwo">
+                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                   اساتید
+                               </button>
+                           </h2>
+                           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                               <div class="accordion-body d-flex flex-column ">
+                                   <div class="btn text-end">
+                                       <a class="nav-link" href="../views/teacher_archive.html">اساتید برتر </a>
+                                   </div>
+                                   <div class="btn text-end">
+                                       <a class="nav-link" href="../views/teacher_archive.html">همه اساتید</a>
+                                   </div>
+                                   <div class="btn text-end">
+                                       <a class="nav-link" href="../views/teacher_archive.html">اساتید جدید</a>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="accordion-item">
+                           <h2 class="accordion-header" id="headingThree">
+                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                   کتاب ها
+                               </button>
+                           </h2>
+                           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                               <div class="accordion-body d-flex flex-column ">
+                                   <div class="btn text-end">
+                                       <a class="nav-link" href="../views/book_archive.html">تخصصی</a>
+                                   </div>
+                                   <div class="btn text-end">
+                                       <a class="nav-link" href="../views/book_archive.html">پایه</a>
+                                   </div>
+                                   <div class="btn text-end">
+                                       <a class="nav-link" href="../views/book_archive.html">عمومی</a>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
 
 
-        </div>
-      </div>
-    </div>
+
+
+               </div>
+           </div>
+       </div>
 
 
     
@@ -243,7 +249,7 @@
 
         </div>
 
-        <div class="info-container col-xl-6 col-md-7 col-sm-8 mx-auto p-xl-3 p-lg-4 px-md-3 py-md-5 px-sm-3 py-sm-5">
+        <div class="info-container col-xl-6 col-md-7 col-sm-8 mx-auto p-xl-3 p-lg-4 px-md-3 py-md-5 px-sm-3 py-sm-5" >
 
                  <div class="tab slider-show-info btn m-3 mx-xl-0 mx-lg-0 mx-md-0 mx-sm-auto    ">
                     <span class="slider-icon-con rounded-circle ">
@@ -253,9 +259,9 @@
                       معرفی رشته
                     </span>
                 </div>
-                <span class="fs-1 font-weight-bold "> رشته  شبکه و نرم افزار</span>
+                <span class="fs-1  " style="font-weight: bolder;"> رشته  شبکه و نرم افزار</span>
                 
-                <p class="fs-4  ">
+                <p class="fs-5  mt-4 body-3" style="color: #828282">
                   شاید بشه قرن ۲۱ را قرن کامپیوتر و اینترنت نامید و به همین دلیل رشته کامپیوتر یا همان رشته شبکه و نرم افزار محبوب ترین رشته تحصیلی در هنرستان های فنی و حرفه ای شده است. امروزه از کامپیوتر در همه سازمانها و ادارات شهرهای بزرگ و کوچیک استفاده میشه. اطلاعات و تصاویر از طریق شبکه اینترنت، در چند ثانیه، به دورترین نقطه کره زمین می رسند. نقشه های ترافیک شهری، وضعیت آب و هوا، خرید های کالا همه از طریق اینترنت در دسترس هستند.
                 </p>
 
@@ -277,23 +283,23 @@
 
     <div class=" resp-w tabs ">
   
-    <div  class="tab active  slider-show-info btn w-fit  mx-auto" data-target="tab1" >                
+    <div  class="tab active  slider-show-info btn  mx-auto" data-target="tab1" >
                     
-                    <span class="fs-5 ">
+                    <span class="">
                       دهم
                     </span>
     </div>
 
-    <div  class="tab   slider-show-info btn w-fit  mx-auto" data-target="tab2" >                
+    <div  class="tab   slider-show-info btn   mx-auto" data-target="tab2" >
                     
-                    <span class="fs-5 ">
+                    <span class="">
                       یازدهم
                     </span>
     </div>
 
-    <div  class="tab   slider-show-info btn w-fit  mx-auto" data-target="tab3" >                
+    <div  class="tab   slider-show-info btn   mx-auto" data-target="tab3" >
                     
-                    <span class="fs-5 ">
+                    <span class="">
                       دوازدهم
                     </span>
     </div>
@@ -416,224 +422,224 @@
         </div>
 
         <div class="swiper-slide">
-        <div class="cards-grid">
+            <div class="cards-grid">
 
-            <!-- CARD 1 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/6.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">فیزیک</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 1 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/book_archive/6.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">فیزیک</h5>
+                        <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                        <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                            مشاهده بیشتر
+                            <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                        </a>
+                    </div>
+                </div>
 
-            <!-- CARD 2 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/5.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">دانش فنی پایه</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 2 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/book_archive/5.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">دانش فنی پایه</h5>
+                        <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                        <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                            مشاهده بیشتر
+                            <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                        </a>
+                    </div>
+                </div>
 
-            <!-- CARD 3 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/4.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">نقشه کشی فنی رایانه ای</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 3 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/book_archive/4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">نقشه کشی فنی رایانه ای</h5>
+                        <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                        <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                            مشاهده بیشتر
+                            <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                        </a>
+                    </div>
+                </div>
 
-            <!-- CARD 4 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">الزامات محیط کار</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 4 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/book_archive/3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">الزامات محیط کار</h5>
+                        <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                        <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                            مشاهده بیشتر
+                            <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                        </a>
+                    </div>
+                </div>
 
-            <!-- CARD 5 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">آمادگی دفاعی</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 5 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/book_archive/2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">آمادگی دفاعی</h5>
+                        <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                        <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                            مشاهده بیشتر
+                            <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                        </a>
+                    </div>
+                </div>
 
-            <!-- CARD 6 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/4.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">نقشه کشی فنی رایانه ای</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 6 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/book_archive/4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">نقشه کشی فنی رایانه ای</h5>
+                        <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                        <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                            مشاهده بیشتر
+                            <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                        </a>
+                    </div>
+                </div>
 
-            <!-- CARD 7 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">الزامات محیط کار</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 7 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/book_archive/3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">الزامات محیط کار</h5>
+                        <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                        <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                            مشاهده بیشتر
+                            <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                        </a>
+                    </div>
+                </div>
 
-            <!-- CARD 8 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">آمادگی دفاعی</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 8 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/book_archive/2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">آمادگی دفاعی</h5>
+                        <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                        <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                            مشاهده بیشتر
+                            <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                        </a>
+                    </div>
+                </div>
 
-        </div>
+            </div>
         </div>
 
 
         <div class="swiper-slide">
-        <div class="cards-grid">
+            <div class="cards-grid">
 
-            <!-- CARD 1 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/6.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">فیزیک</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 1 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/book_archive/6.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">فیزیک</h5>
+                        <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                        <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                            مشاهده بیشتر
+                            <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                        </a>
+                    </div>
+                </div>
 
-            <!-- CARD 2 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/5.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">دانش فنی پایه</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 2 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/book_archive/5.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">دانش فنی پایه</h5>
+                        <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                        <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                            مشاهده بیشتر
+                            <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                        </a>
+                    </div>
+                </div>
 
-            <!-- CARD 3 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/4.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">نقشه کشی فنی رایانه ای</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 3 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/book_archive/4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">نقشه کشی فنی رایانه ای</h5>
+                        <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                        <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                            مشاهده بیشتر
+                            <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                        </a>
+                    </div>
+                </div>
 
-            <!-- CARD 4 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">الزامات محیط کار</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 4 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/book_archive/3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">الزامات محیط کار</h5>
+                        <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                        <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                            مشاهده بیشتر
+                            <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                        </a>
+                    </div>
+                </div>
 
-            <!-- CARD 5 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">آمادگی دفاعی</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 5 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/book_archive/2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">آمادگی دفاعی</h5>
+                        <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                        <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                            مشاهده بیشتر
+                            <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                        </a>
+                    </div>
+                </div>
 
-            <!-- CARD 6 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/4.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">نقشه کشی فنی رایانه ای</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 6 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/book_archive/4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">نقشه کشی فنی رایانه ای</h5>
+                        <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                        <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                            مشاهده بیشتر
+                            <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                        </a>
+                    </div>
+                </div>
 
-            <!-- CARD 7 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">الزامات محیط کار</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 7 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/book_archive/3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">الزامات محیط کار</h5>
+                        <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                        <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                            مشاهده بیشتر
+                            <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                        </a>
+                    </div>
+                </div>
 
-            <!-- CARD 8 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">آمادگی دفاعی</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 8 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/book_archive/2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">آمادگی دفاعی</h5>
+                        <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                        <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                            مشاهده بیشتر
+                            <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                        </a>
+                    </div>
+                </div>
 
-        </div>
+            </div>
         </div>
 
 
@@ -643,339 +649,649 @@
   </div>
 </div>
 
-<div id="tab3" class="tab-content ">
+    <div id="tab2" class="tab-content ">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="cards-grid">
+
+                        <!-- CARD 1 -->
+                        <div class="card introduce-card book-card">
+                            <img src="../public/assets/images/single_book/11/1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">ریاضی 2 </h5>
+                                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                                    مشاهده بیشتر
+                                    <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="card introduce-card book-card">
+                            <img src="../public/assets/images/single_book/11/2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"> تاریخ  معاصر ایران </h5>
+                                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                                    مشاهده بیشتر
+                                    <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="card introduce-card book-card">
+                            <img src="../public/assets/images/single_book/11/3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">فارسی 2</h5>
+                                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                                    مشاهده بیشتر
+                                    <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="card introduce-card book-card">
+                            <img src="../public/assets/images/single_book/11/4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">عربی 2</h5>
+                                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                                    مشاهده بیشتر
+                                    <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div class="card introduce-card book-card">
+                            <img src="../public/assets/images/single_book/11/5.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                            <h5 class="card-title">شیمی</h5>
+                            <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                            <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                                مشاهده بیشتر
+                                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- CARD 6 -->
+                        <div class="card introduce-card book-card">
+                            <img src="../public/assets/images/single_book/11/6.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                            <h5 class="card-title">کاربرد فناوری نوین</h5>
+                            <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                            <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                                مشاهده بیشتر
+                                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- CARD 7 -->
+                        <div class="card introduce-card book-card">
+                            <img src="../public/assets/images/single_book/11/7.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                            <h5 class="card-title">طراحی وب</h5>
+                            <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                            <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                                مشاهده بیشتر
+                                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- CARD 8 -->
+                        <div class="card introduce-card book-card">
+                            <img src="../public/assets/images/single_book/11/8.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                            <h5 class="card-title">توسعه برنامه سازی</h5>
+                            <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                            <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                                مشاهده بیشتر
+                                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                            </a>
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="cards-grid">
+
+                        <!-- CARD 1 -->
+                        <div class="card introduce-card book-card">
+                            <img src="../public/assets/images/single_book/11/1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">ریاضی 2 </h5>
+                                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                                    مشاهده بیشتر
+                                    <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="card introduce-card book-card">
+                            <img src="../public/assets/images/single_book/11/2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"> تاریخ  معاصر ایران </h5>
+                                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                                    مشاهده بیشتر
+                                    <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="card introduce-card book-card">
+                            <img src="../public/assets/images/single_book/11/3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">فارسی 2</h5>
+                                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                                    مشاهده بیشتر
+                                    <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="card introduce-card book-card">
+                            <img src="../public/assets/images/single_book/11/4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">عربی 2</h5>
+                                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                                    مشاهده بیشتر
+                                    <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div class="card introduce-card book-card">
+                            <img src="../public/assets/images/single_book/11/5.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                            <h5 class="card-title">شیمی</h5>
+                            <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                            <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                                مشاهده بیشتر
+                                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- CARD 6 -->
+                        <div class="card introduce-card book-card">
+                            <img src="../public/assets/images/single_book/11/6.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                            <h5 class="card-title">کاربرد فناوری نوین</h5>
+                            <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                            <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                                مشاهده بیشتر
+                                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- CARD 7 -->
+                        <div class="card introduce-card book-card">
+                            <img src="../public/assets/images/single_book/11/7.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                            <h5 class="card-title">طراحی وب</h5>
+                            <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                            <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                                مشاهده بیشتر
+                                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- CARD 8 -->
+                        <div class="card introduce-card book-card">
+                            <img src="../public/assets/images/single_book/11/8.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                            <h5 class="card-title">توسعه برنامه سازی</h5>
+                            <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                            <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                                مشاهده بیشتر
+                                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                            </a>
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                    <div class="cards-grid">
+
+                        <!-- CARD 1 -->
+                        <div class="card introduce-card book-card">
+                            <img src="../public/assets/images/single_book/11/1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">ریاضی 2 </h5>
+                                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                                    مشاهده بیشتر
+                                    <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="card introduce-card book-card">
+                            <img src="../public/assets/images/single_book/11/2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"> تاریخ  معاصر ایران </h5>
+                                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                                    مشاهده بیشتر
+                                    <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="card introduce-card book-card">
+                            <img src="../public/assets/images/single_book/11/3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">فارسی 2</h5>
+                                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                                    مشاهده بیشتر
+                                    <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="card introduce-card book-card">
+                            <img src="../public/assets/images/single_book/11/4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">عربی 2</h5>
+                                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                                    مشاهده بیشتر
+                                    <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div class="card introduce-card book-card">
+                            <img src="../public/assets/images/single_book/11/5.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                            <h5 class="card-title">شیمی</h5>
+                            <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                            <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                                مشاهده بیشتر
+                                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- CARD 6 -->
+                        <div class="card introduce-card book-card">
+                            <img src="../public/assets/images/single_book/11/6.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                            <h5 class="card-title">کاربرد فناوری نوین</h5>
+                            <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                            <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                                مشاهده بیشتر
+                                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- CARD 7 -->
+                        <div class="card introduce-card book-card">
+                            <img src="../public/assets/images/single_book/11/7.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                            <h5 class="card-title">طراحی وب</h5>
+                            <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                            <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                                مشاهده بیشتر
+                                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- CARD 8 -->
+                        <div class="card introduce-card book-card">
+                            <img src="../public/assets/images/single_book/11/8.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                            <h5 class="card-title">توسعه برنامه سازی</h5>
+                            <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                            <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                                مشاهده بیشتر
+                                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                            </a>
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+
+    <div id="tab3" class="tab-content ">
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
 
         <div class="swiper-slide">
-        <div class="cards-grid">
+            <div class="cards-grid">
 
-            <!-- CARD 1 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/6.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">فیزیک</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 1 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/single_book/12/1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">سلامت و بهداشت</h5>
+                        <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                        <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                            مشاهده بیشتر
+                            <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                        </a>
+                    </div>
+                </div>
 
-            <!-- CARD 2 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/5.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">دانش فنی پایه</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 2 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/single_book/12/2.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                    <h5 class="card-title">اخلاق حرفه ای</h5>
+                    <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                    <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                        مشاهده بیشتر
+                        <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                    </a>
+                </div>
+                </div>
 
-            <!-- CARD 3 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/4.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">نقشه کشی فنی رایانه ای</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 3 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/single_book/12/3.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                    <h5 class="card-title">فارسی 3</h5>
+                    <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                    <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                        مشاهده بیشتر
+                        <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                    </a>
+                </div>
+                </div>
 
-            <!-- CARD 4 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">الزامات محیط کار</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 4 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/single_book/12/4.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                    <h5 class="card-title">دانش فنی تخصصی</h5>
+                    <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                    <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                        مشاهده بیشتر
+                        <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                    </a>
+                </div>
+                </div>
 
-            <!-- CARD 5 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">آمادگی دفاعی</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 5 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/single_book/12/5.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                    <h5 class="card-title">تجارت الکترونیک</h5>
+                    <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                    <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                        مشاهده بیشتر
+                        <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                    </a>
+                </div>
+                </div>
 
-            <!-- CARD 6 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/4.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">نقشه کشی فنی رایانه ای</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 6 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/single_book/12/6.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                    <h5 class="card-title">تجهیزات شبکه و سخت افزار</h5>
+                    <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                    <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                        مشاهده بیشتر
+                        <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                    </a>
+                </div>
+                </div>
 
-            <!-- CARD 7 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">الزامات محیط کار</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 7 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/single_book/12/7.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                    <h5 class="card-title">هویت اجتماعی</h5>
+                    <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                    <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                        مشاهده بیشتر
+                        <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                    </a>
+                </div>
+                </div>
 
-            <!-- CARD 8 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">آمادگی دفاعی</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 8 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/single_book/12/8.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                    <h5 class="card-title">ریاضی 3</h5>
+                    <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                    <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                        مشاهده بیشتر
+                        <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                    </a>
+                </div>
+                </div>
 
-        </div>
+            </div>
         </div>
 
         <div class="swiper-slide">
-        <div class="cards-grid">
+            <div class="cards-grid">
 
-            <!-- CARD 1 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/6.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">فیزیک</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 1 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/single_book/12/1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">سلامت و بهداشت</h5>
+                        <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                        <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                            مشاهده بیشتر
+                            <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                        </a>
+                    </div>
+                </div>
 
-            <!-- CARD 2 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/5.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">دانش فنی پایه</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 2 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/single_book/12/2.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                    <h5 class="card-title">اخلاق حرفه ای</h5>
+                    <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                    <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                        مشاهده بیشتر
+                        <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                    </a>
+                </div>
+                </div>
 
-            <!-- CARD 3 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/4.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">نقشه کشی فنی رایانه ای</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 3 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/single_book/12/3.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                    <h5 class="card-title">فارسی 3</h5>
+                    <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                    <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                        مشاهده بیشتر
+                        <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                    </a>
+                </div>
+                </div>
 
-            <!-- CARD 4 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">الزامات محیط کار</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 4 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/single_book/12/4.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                    <h5 class="card-title">دانش فنی تخصصی</h5>
+                    <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                    <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                        مشاهده بیشتر
+                        <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                    </a>
+                </div>
+                </div>
 
-            <!-- CARD 5 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">آمادگی دفاعی</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 5 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/single_book/12/5.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                    <h5 class="card-title">تجارت الکترونیک</h5>
+                    <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                    <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                        مشاهده بیشتر
+                        <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                    </a>
+                </div>
+                </div>
 
-            <!-- CARD 6 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/4.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">نقشه کشی فنی رایانه ای</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 6 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/single_book/12/6.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                    <h5 class="card-title">تجهیزات شبکه و سخت افزار</h5>
+                    <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                    <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                        مشاهده بیشتر
+                        <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                    </a>
+                </div>
+                </div>
 
-            <!-- CARD 7 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">الزامات محیط کار</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 7 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/single_book/12/7.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                    <h5 class="card-title">هویت اجتماعی</h5>
+                    <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                    <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                        مشاهده بیشتر
+                        <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                    </a>
+                </div>
+                </div>
 
-            <!-- CARD 8 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">آمادگی دفاعی</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 8 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/single_book/12/8.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                    <h5 class="card-title">ریاضی 3</h5>
+                    <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                    <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                        مشاهده بیشتر
+                        <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                    </a>
+                </div>
+                </div>
 
-        </div>
+            </div>
         </div>
 
 
         <div class="swiper-slide">
-        <div class="cards-grid">
+            <div class="cards-grid">
 
-            <!-- CARD 1 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/6.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">فیزیک</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 1 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/single_book/12/1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">سلامت و بهداشت</h5>
+                        <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                        <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                            مشاهده بیشتر
+                            <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                        </a>
+                    </div>
+                </div>
 
-            <!-- CARD 2 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/5.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">دانش فنی پایه</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 2 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/single_book/12/2.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                    <h5 class="card-title">اخلاق حرفه ای</h5>
+                    <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                    <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                        مشاهده بیشتر
+                        <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                    </a>
+                </div>
+                </div>
 
-            <!-- CARD 3 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/4.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">نقشه کشی فنی رایانه ای</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 3 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/single_book/12/3.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                    <h5 class="card-title">فارسی 3</h5>
+                    <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                    <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                        مشاهده بیشتر
+                        <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                    </a>
+                </div>
+                </div>
 
-            <!-- CARD 4 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">الزامات محیط کار</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 4 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/single_book/12/4.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                    <h5 class="card-title">دانش فنی تخصصی</h5>
+                    <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                    <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                        مشاهده بیشتر
+                        <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                    </a>
+                </div>
+                </div>
 
-            <!-- CARD 5 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">آمادگی دفاعی</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 5 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/single_book/12/5.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                    <h5 class="card-title">تجارت الکترونیک</h5>
+                    <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                    <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                        مشاهده بیشتر
+                        <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                    </a>
+                </div>
+                </div>
 
-            <!-- CARD 6 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/4.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">نقشه کشی فنی رایانه ای</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 6 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/single_book/12/6.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                    <h5 class="card-title">تجهیزات شبکه و سخت افزار</h5>
+                    <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                    <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                        مشاهده بیشتر
+                        <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                    </a>
+                </div>
+                </div>
 
-            <!-- CARD 7 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">الزامات محیط کار</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 7 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/single_book/12/7.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                    <h5 class="card-title">هویت اجتماعی</h5>
+                    <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                    <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                        مشاهده بیشتر
+                        <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                    </a>
+                </div>
+                </div>
 
-            <!-- CARD 8 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">آمادگی دفاعی</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
+                <!-- CARD 8 -->
+                <div class="card introduce-card book-card">
+                    <img src="../public/assets/images/single_book/12/8.jpg" class="card-img-top" alt="...">            <div class="card-body">
+                    <h5 class="card-title">ریاضی 3</h5>
+                    <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
+                    <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
+                        مشاهده بیشتر
+                        <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
+                    </a>
+                </div>
+                </div>
 
-        </div>
+            </div>
         </div>
 
 
@@ -985,353 +1301,12 @@
   </div>
 </div>
 
-<div id="tab2" class="tab-content ">
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-
-        <div class="swiper-slide">
-        <div class="cards-grid">
-
-            <!-- CARD 1 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/6.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">فیزیک</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
-
-            <!-- CARD 2 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/5.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">دانش فنی پایه</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
-
-            <!-- CARD 3 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/4.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">نقشه کشی فنی رایانه ای</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
-
-            <!-- CARD 4 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">الزامات محیط کار</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
-
-            <!-- CARD 5 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">آمادگی دفاعی</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
-
-            <!-- CARD 6 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/4.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">نقشه کشی فنی رایانه ای</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
-
-            <!-- CARD 7 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">الزامات محیط کار</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
-
-            <!-- CARD 8 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">آمادگی دفاعی</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
-
-        </div>
-        </div>
-
-        <div class="swiper-slide">
-        <div class="cards-grid">
-
-            <!-- CARD 1 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/6.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">فیزیک</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
-
-            <!-- CARD 2 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/5.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">دانش فنی پایه</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
-
-            <!-- CARD 3 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/4.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">نقشه کشی فنی رایانه ای</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
-
-            <!-- CARD 4 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">الزامات محیط کار</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
-
-            <!-- CARD 5 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">آمادگی دفاعی</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
-
-            <!-- CARD 6 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/4.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">نقشه کشی فنی رایانه ای</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
-
-            <!-- CARD 7 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">الزامات محیط کار</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
-
-            <!-- CARD 8 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">آمادگی دفاعی</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
-
-        </div>
-        </div>
-
-
-        <div class="swiper-slide">
-        <div class="cards-grid">
-
-            <!-- CARD 1 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/6.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">فیزیک</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
-
-            <!-- CARD 2 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/5.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">دانش فنی پایه</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
-
-            <!-- CARD 3 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/4.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">نقشه کشی فنی رایانه ای</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
-
-            <!-- CARD 4 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">الزامات محیط کار</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
-
-            <!-- CARD 5 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">آمادگی دفاعی</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
-
-            <!-- CARD 6 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/4.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">نقشه کشی فنی رایانه ای</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
-
-            <!-- CARD 7 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/3.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">الزامات محیط کار</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
-
-            <!-- CARD 8 -->
-            <div class="card introduce-card book-card">
-            <img src="../public/assets/images/book_archive/2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">آمادگی دفاعی</h5>
-                <p class="card-text">آموزش برنامه‌نویسی و هوش مصنوعی با جدیدترین متدهای روز دنیا</p>
-                <a href="single_book.html" class="btn btn-outline-primary rounded-5 col-12">
-                مشاهده بیشتر
-                <img src="../public/assets/icons/book_archive/arrow-left-more.svg" alt="">
-                </a>
-            </div>
-            </div>
-
-        </div>
-        </div>
-
-
-    </div>
-    
-    <div class="swiper-pagination"></div>
-  </div>
-</div>
 
    </div>
     
   <!--Second Slider-->
 <div class=" resp-w position-relative col-lg-10 mx-auto  p-5">
-            
+
                  <div class="slider-show-info btn  ">
                     <span class="slider-icon-con rounded-circle ">
                         <img src="../public/assets/icons/carousels/star.svg" alt="">
@@ -1340,9 +1315,9 @@
                         مدرسه ها
                     </span>
                 </div>
-            
+
                 <div class="sliders_heading">
-        
+
                     <div >
 
                         معرفی مدرسه ها
@@ -1367,7 +1342,7 @@
 
 
     <!-- Slider main container -->
-    
+
       <div class="swiper-container overflow-hidden m-">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
@@ -1435,7 +1410,7 @@
                 </div>
               </div>
             </div>
-            
+
              <div class="swiper-slide">
                  <div class="mx-auto card introduce-card school-card ">
                 <img src="../public/assets/images/school_archive/schools/3.png" class="card-img-top" alt="...">
@@ -1468,190 +1443,190 @@
               </div>
             </div>
 
-            
+
         </div>
 
 
     </div>
-      
+
 
 </div>
 
 
 <!--Fourth Slider-->
-<div class="container position-relative col-lg-10  mx-auto  p-5">
+       <div class="container position-relative col-lg-10  mx-auto  p-5">
 
-                <div class="slider-show-info btn  ">
+           <div class="slider-show-info btn  ">
                     <span class="slider-icon-con rounded-circle ">
                         <img src="../public/assets/icons/carousels/star.svg" alt="">
                     </span>
-                    <span class="caption-1 ">
+               <span class="caption-1 ">
                         اساتید
                     </span>
-                </div>
+           </div>
 
-                <div class="sliders_heading">
+           <div class="sliders_heading">
 
-                    <div >
-                        معرفی اساتید
+               <div >
+                   معرفی اساتید
 
-                    </div>
+               </div>
 
-                    <hr >
-
-
-                     <a href="#" class="py-2 py-lg-3 d-flex justify-content-evenly align-items-center btn btn-outline-primary rounded-5 " style="width: 176px !important;height:fit-content !important;text-wrap: nowrap;">
-                            مشاهده بیشتر
-                                <img src="../public/assets/icons/carousels/arrow-left.svg" alt="prev" />
-                        </a>
-                    
-                </div>
+               <hr >
 
 
+               <a href="teacher_archive.html" class="py-2 py-lg-3 d-flex justify-content-evenly align-items-center btn btn-outline-primary rounded-5 " style="width: 176px !important;height:fit-content !important;text-wrap: nowrap;">
+                   مشاهده بیشتر
+                   <img src="../public/assets/icons/carousels/arrow-left.svg" alt="prev" />
+               </a>
 
-    <!-- Slider main container -->
-    <div class="swiper-container3 ">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide ">
-                 <a href="single_teacher.html" class=" teacher-card  text-bg-dark border-0 shadow-sm p-0" >
-                    <img src="../public/assets/images/teacher_archive/t1.png" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <div class="card-con">
-                            <h5 class="teacher-card-title">
-                                آقای احمدی
-                            </h5>
-                            <p class="teacher-card-text">
-                                دبیر ریاضی
-                            </p>
-                        </div>
-
-                    </div>
-                </a>
-
-            </div>
-
-        
-            <div class="swiper-slide ">
-                 <a href="single_teacher.html" class=" teacher-card  text-bg-dark border-0 shadow-sm p-0" >
-                    <img src="../public/assets/images/teacher_archive/t2.png" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <div class="card-con">
-                            <h5 class="teacher-card-title">
-                                آقای احمدی
-                            </h5>
-                            <p class="teacher-card-text">
-                                دبیر ریاضی
-                            </p>
-                        </div>
-
-                    </div>
-                </a>
-
-            </div>
+           </div>
 
 
-            <div class="swiper-slide ">
-                 <a href="single_teacher.html" class=" teacher-card  text-bg-dark border-0 shadow-sm p-0" >
-                    <img src="../public/assets/images/teacher_archive/t3.png" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <div class="card-con">
-                            <h5 class="teacher-card-title">
-                                آقای احمدی
-                            </h5>
-                            <p class="teacher-card-text">
-                                دبیر ریاضی
-                            </p>
-                        </div>
 
-                    </div>
-                </a>
+           <!-- Slider main container -->
+           <div class="swiper-container3 ">
+               <!-- Additional required wrapper -->
+               <div class="swiper-wrapper">
 
-            </div>
+                   <div class="swiper-slide ">
+                       <a href="single_teacher.html" class=" teacher-card  text-bg-dark border-0 shadow-sm p-0" >
+                           <img src="../public/assets/images/teacher_archive/t1.png" class="card-img" alt="...">
+                           <div class="card-img-overlay">
+                               <div class="card-con">
+                                   <h5 class="teacher-card-title">
+                                       آقای احمدی
+                                   </h5>
+                                   <p class="teacher-card-text">
+                                       دبیر ریاضی
+                                   </p>
+                               </div>
 
+                           </div>
+                       </a>
 
-                <div class="swiper-slide ">
-                 <a href="single_teacher.html" class=" teacher-card  text-bg-dark border-0 shadow-sm p-0" >
-                    <img src="../public/assets/images/teacher_archive/t4.jpg" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <div class="card-con">
-                            <h5 class="teacher-card-title">
-                                آقای احمدی
-                            </h5>
-                            <p class="teacher-card-text">
-                                دبیر ریاضی
-                            </p>
-                        </div>
-
-                    </div>
-                </a>
-
-            </div>
+                   </div>
 
 
-            <div class="swiper-slide ">
-                 <a href="single_teacher.html" class=" teacher-card  text-bg-dark border-0 shadow-sm p-0" >
-                    <img src="../public/assets/images/teacher_archive/t5.png" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <div class="card-con">
-                            <h5 class="teacher-card-title">
-                                آقای احمدی
-                            </h5>
-                            <p class="teacher-card-text">
-                                دبیر ریاضی
-                            </p>
-                        </div>
+                   <div class="swiper-slide ">
+                       <a href="single_teacher.html" class=" teacher-card  text-bg-dark border-0 shadow-sm p-0" >
+                           <img src="../public/assets/images/teacher_archive/t2.png" class="card-img" alt="...">
+                           <div class="card-img-overlay">
+                               <div class="card-con">
+                                   <h5 class="teacher-card-title">
+                                       آقای احمدی
+                                   </h5>
+                                   <p class="teacher-card-text">
+                                       دبیر ریاضی
+                                   </p>
+                               </div>
 
-                    </div>
-                </a>
+                           </div>
+                       </a>
 
-            </div>
-
-
-            <div class="swiper-slide ">
-                 <a href="single_teacher.html" class=" teacher-card  text-bg-dark border-0 shadow-sm p-0" >
-                    <img src="../public/assets/images/teacher_archive/t1.png" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <div class="card-con">
-                            <h5 class="teacher-card-title">
-                                آقای احمدی
-                            </h5>
-                            <p class="teacher-card-text">
-                                دبیر ریاضی
-                            </p>
-                        </div>
-
-                    </div>
-                </a>
-
-            </div>
-
-        
-            <div class="swiper-slide  ">
-                 <a href="single_teacher.html" class=" teacher-card  text-bg-dark border-0 shadow-sm p-0" >
-                    <img src="../public/assets/images/teacher_archive/t2.png" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <div class="card-con">
-                            <h5 class="teacher-card-title">
-                                آقای احمدی
-                            </h5>
-                            <p class="teacher-card-text">
-                                دبیر ریاضی
-                            </p>
-                        </div>
-
-                    </div>
-                </a>
-
-            </div>
+                   </div>
 
 
-        </div>
+                   <div class="swiper-slide ">
+                       <a href="single_teacher.html" class=" teacher-card  text-bg-dark border-0 shadow-sm p-0" >
+                           <img src="../public/assets/images/teacher_archive/t3.png" class="card-img" alt="...">
+                           <div class="card-img-overlay">
+                               <div class="card-con">
+                                   <h5 class="teacher-card-title">
+                                       آقای احمدی
+                                   </h5>
+                                   <p class="teacher-card-text">
+                                       دبیر ریاضی
+                                   </p>
+                               </div>
+
+                           </div>
+                       </a>
+
+                   </div>
 
 
-    </div>
-</div>
+                   <div class="swiper-slide ">
+                       <a href="single_teacher.html" class=" teacher-card  text-bg-dark border-0 shadow-sm p-0" >
+                           <img src="../public/assets/images/teacher_archive/t4.jpg" class="card-img" alt="...">
+                           <div class="card-img-overlay">
+                               <div class="card-con">
+                                   <h5 class="teacher-card-title">
+                                       آقای احمدی
+                                   </h5>
+                                   <p class="teacher-card-text">
+                                       دبیر ریاضی
+                                   </p>
+                               </div>
+
+                           </div>
+                       </a>
+
+                   </div>
+
+
+                   <div class="swiper-slide ">
+                       <a href="single_teacher.html" class=" teacher-card  text-bg-dark border-0 shadow-sm p-0" >
+                           <img src="../public/assets/images/teacher_archive/t5.png" class="card-img" alt="...">
+                           <div class="card-img-overlay">
+                               <div class="card-con">
+                                   <h5 class="teacher-card-title">
+                                       آقای احمدی
+                                   </h5>
+                                   <p class="teacher-card-text">
+                                       دبیر ریاضی
+                                   </p>
+                               </div>
+
+                           </div>
+                       </a>
+
+                   </div>
+
+
+                   <div class="swiper-slide ">
+                       <a href="single_teacher.html" class=" teacher-card  text-bg-dark border-0 shadow-sm p-0" >
+                           <img src="../public/assets/images/teacher_archive/t1.png" class="card-img" alt="...">
+                           <div class="card-img-overlay">
+                               <div class="card-con">
+                                   <h5 class="teacher-card-title">
+                                       آقای احمدی
+                                   </h5>
+                                   <p class="teacher-card-text">
+                                       دبیر ریاضی
+                                   </p>
+                               </div>
+
+                           </div>
+                       </a>
+
+                   </div>
+
+
+                   <div class="swiper-slide  ">
+                       <a href="single_teacher.html" class=" teacher-card  text-bg-dark border-0 shadow-sm p-0" >
+                           <img src="../public/assets/images/teacher_archive/t2.png" class="card-img" alt="...">
+                           <div class="card-img-overlay">
+                               <div class="card-con">
+                                   <h5 class="teacher-card-title">
+                                       آقای احمدی
+                                   </h5>
+                                   <p class="teacher-card-text">
+                                       دبیر ریاضی
+                                   </p>
+                               </div>
+
+                           </div>
+                       </a>
+
+                   </div>
+
+
+               </div>
+
+
+           </div>
+       </div>
 
 
 

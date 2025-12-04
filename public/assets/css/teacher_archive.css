@@ -220,7 +220,7 @@
     width: 266px;
     height: 115px;
     border-radius: 8px;
-    border: 1px solid  #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.44);
     backdrop-filter: blur(32px);
     box-shadow: 0px 0px 0px 0.5px ;
     display: flex;
@@ -249,7 +249,7 @@
         width: 238px;
         height: 115px;
         border-radius: 8px;
-        border: 1px solid  #FFFFFF;
+        border: 1px solid rgba(255, 255, 255, 0.44);
         backdrop-filter: blur(32px);
         box-shadow: 0px 0px 0px 0.5px ;
         display: flex;
@@ -352,18 +352,46 @@
     /*transform: translateX(5rem) !important;*/
 }
 
-.swiper-slide:has(.major-card,.school-card,.book-card) {
+.introduce-card{
     box-shadow: 0px 4px 20px 0px #1D59CB14 !important;
-    padding: 0 !important;
 }
 
 
 .swiper-slide .school-card{
     width: 100% ; /* یا اندازه واقعی کارت */
-    height: 400px !important;
+    height: 420px !important;
     transform: translateX(0rem);
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 1.5rem !important;
 }
+
+.swiper-slide{
+    overflow: visible !important;
+}
+
+
+
+
+
+.archive-cards .navigation {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.archive-cards .pagination {
+
+    width: fit-content !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0 !important;
+
+}
+
 
