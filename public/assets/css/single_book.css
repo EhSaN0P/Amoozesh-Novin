@@ -100,6 +100,9 @@
     position: absolute;
     bottom: auto; /* برای اینکه بالای فوتر بمونه */
 }
+.radius{
+    border-radius: 1.5rem;
+}
 
 
 
