@@ -60,40 +60,9 @@
     cursor: pointer;
 }
 
-
-@media (max-width: 768px) {
-
-    .lesson-row {
-        flex-direction: column; 
-        align-items: flex-start !important;
-    }
-
-    .right-content {
-        width: 90%;
-        justify-content: flex-end !important; 
-        margin-right: 38px; 
-        margin-top: 10px;
-    }
-
-    .right-content img,
-    .right-content span {
-        margin-left: 5px;
-    }
-    .headline{
-        width: 1%;
-    }
-}
-
 .headline{
     width: 100%;
 }
-
-@media (min-width: 992px) {
-    .headline{
-        width: 75%;
-    }
-}
-
 
 .card-custom .badge{
     border-radius: 16px !important;
@@ -110,10 +79,6 @@
 .lock {
     display: none;
 }
-
-
-
-
 
 
 /* موبایل: باکس قیمت */
@@ -172,4 +137,42 @@
     .video-js{
         width: 100%;
     }
+
+@media (min-width: 576px) {
+    .lesson-img{
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .lesson-row {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+
+    .right-content {
+        width: 90%;
+        justify-content: flex-end !important;
+        margin-right: 38px;
+        margin-top: 10px;
+    }
+
+    .right-content img,
+    .right-content span {
+        margin-left: 5px;
+    }
+    .headline{
+        width: 1%;
+    }
+}
+
+@media (min-width: 992px) {
+    .headline{
+        width: 75%;
+    }
+}
+
 
